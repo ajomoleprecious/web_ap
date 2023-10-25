@@ -30,9 +30,9 @@
                     id="productSearch">
                 <input class="header__menu2__searchButton" type="submit" value="Zoek">
             </form>
-            <a class="header__menu2__shopping" href="#"><img src="assets/icons/shopping-cart.svg" alt="cart"></a>
-            <a class="header__menu2__wishlist" href="#"><img src="assets/icons/wishlist.svg" alt="wishlist"></a>
-            <a class="header__menu2__profile" href="#"><img src="assets/icons/profile.svg" alt="profile"></a>
+            <a class="header__menu2__shopping" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="header__menu2__wishlist" href="#"><i class="fa-solid fa-heart"></i></a>
+            <a class="header__menu2__profile" href="#"><i class="fa-solid fa-user"></i></a>
         </section>
         <section class="ham_menu">
             <input type="checkbox" id="check">
@@ -71,7 +71,7 @@
                 </optgroup>
             </select>
         </section>
-        
+
         <section class="shop">
             <section class="shop__aside">
                 <i class="filterClose fa-solid fa-xmark"></i>
@@ -211,90 +211,91 @@
             </section>
             <section class="shop__products">
                 <a href="product.html/?id=1">
-                   <article class="product__card">
-                    <img class="product__img" src="assets/imgs/1/1.webp" alt="Little Miss Broadway"><abbr
-                        class="product__title" title="Little Miss Broadway">Little Miss Broadway</abbr><img
-                        class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">drama</p>
-                    <p class="product__releaseYear">1938</p>
-                    <p class="product__price">9.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                    <article class="product__card">
+                        <img class="product__img" src="assets/imgs/1/1.webp" alt="Little Miss Broadway"><abbr
+                            class="product__title" title="Little Miss Broadway">Little Miss Broadway</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn liked"></i>
+                        <p class="product__genre">drama</p>
+                        <p class="product__releaseYear">1938</p>
+                        <p class="product__price">9.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">5000</p>
-                </article> 
+                        <p class="product__sales">5000</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=2">
-                   <article class="product__card">
-                    <img class="product__img" src="assets/imgs/2/1.webp" alt="The Small Town (a.k.a. The Town)"><abbr
-                        class="product__title" title="The Small Town (a.k.a. The Town)">The Small Town (a.k.a. The
-                        Town)</abbr><img class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">drama</p>
-                    <p class="product__releaseYear">1997</p>
-                    <p class="product__price">12.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                    <article class="product__card">
+                        <img class="product__img" src="assets/imgs/2/1.webp"
+                            alt="The Small Town (a.k.a. The Town)"><abbr class="product__title"
+                            title="The Small Town (a.k.a. The Town)">The Small Town (a.k.a. The
+                            Town)</abbr><i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">drama</p>
+                        <p class="product__releaseYear">1997</p>
+                        <p class="product__price">12.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">5000</p>
-                </article> 
+                        <p class="product__sales">5000</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=3">
                     <article class="product__card">
-                    <img class="product__img" src="assets/imgs/3/1.webp" alt="Hercules"><abbr class="product__title"
-                        title="Hercules">Hercules</abbr><img class="product_wishlistBtn" src="assets/icons/wishlist.svg"
-                        alt="wishlist">
-                    <p class="product__genre">animatie</p>
-                    <p class="product__releaseYear">1997</p>
-                    <p class="product__price">14.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                        <img class="product__img" src="assets/imgs/3/1.webp" alt="Hercules">
+                        <abbr class="product__title" title="Hercules">Hercules</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn liked"></i>
+                        <p class="product__genre">animatie</p>
+                        <p class="product__releaseYear">1997</p>
+                        <p class="product__price">14.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">10000</p>
-                </article>
+                        <p class="product__sales">10000</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=4">
                     <article class="product__card">
-                    <img class="product__img" src="assets/imgs/4/1.webp" alt="The Child (L'enfant)"><abbr
-                        class="product__title" title="The Child (L'enfant)">The Child (L'enfant)</abbr><img
-                        class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">misdaad</p>
-                    <p class="product__releaseYear">2005</p>
-                    <p class="product__price">19.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                        <img class="product__img" src="assets/imgs/4/1.webp" alt="The Child (L'enfant)"><abbr
+                            class="product__title" title="The Child (L'enfant)">The Child (L'enfant)</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">misdaad</p>
+                        <p class="product__releaseYear">2005</p>
+                        <p class="product__price">19.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">1000</p>
-                </article>
+                        <p class="product__sales">1000</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=5">
                     <article class="product__card">
                         <img class="product__img" src="assets/imgs/5/1.webp" alt="The Great White Hype"><abbr
-                            class="product__title" title="The Great White Hype">The Great White Hype</abbr><img
-                            class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
+                            class="product__title" title="The Great White Hype">The Great White Hype</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn liked"></i>
                         <p class="product__genre">komedie</p>
                         <p class="product__releaseYear">1996</p>
                         <p class="product__price">9.99</p>
@@ -312,143 +313,143 @@
                 </a>
                 <a href="product.html/?id=6">
                     <article class="product__card">
-                    <img class="product__img" src="assets/imgs/6/1.webp" alt="The Sun Also Rises"><abbr
-                        class="product__title" title="The Sun Also Rises">The Sun Also Rises</abbr><img
-                        class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">drama</p>
-                    <p class="product__releaseYear">1957</p>
-                    <p class="product__price">12.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                        <img class="product__img" src="assets/imgs/6/1.webp" alt="The Sun Also Rises"><abbr
+                            class="product__title" title="The Sun Also Rises">The Sun Also Rises</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn liked"></i>
+                        <p class="product__genre">drama</p>
+                        <p class="product__releaseYear">1957</p>
+                        <p class="product__price">12.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">15000</p>
-                </article>
+                        <p class="product__sales">15000</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=7">
                     <article class="product__card">
-                    <img class="product__img" src="assets/imgs/7/1.webp" alt="Tracks"><abbr class="product__title"
-                        title="Tracks">Tracks</abbr><img class="product_wishlistBtn" src="assets/icons/wishlist.svg"
-                        alt="wishlist">
-                    <p class="product__genre">avontuur</p>
-                    <p class="product__releaseYear">2013</p>
-                    <p class="product__price">14.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                        <img class="product__img" src="assets/imgs/7/1.webp" alt="Tracks"><abbr class="product__title"
+                            title="Tracks">Tracks</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">avontuur</p>
+                        <p class="product__releaseYear">2013</p>
+                        <p class="product__price">14.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">8500</p>
-                </article>
+                        <p class="product__sales">8500</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=8">
                     <article class="product__card">
-                    <img class="product__img" src="assets/imgs/8/1.webp" alt="Nasty Old People"><abbr
-                        class="product__title" title="Nasty Old People">Nasty Old People</abbr><img
-                        class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">drama</p>
-                    <p class="product__releaseYear">2009</p>
-                    <p class="product__price">14.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                        <img class="product__img" src="assets/imgs/8/1.webp" alt="Nasty Old People"><abbr
+                            class="product__title" title="Nasty Old People">Nasty Old People</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">drama</p>
+                        <p class="product__releaseYear">2009</p>
+                        <p class="product__price">14.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">5897</p>
-                </article>
+                        <p class="product__sales">5897</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=9">
                     <article class="product__card">
-                    <img class="product__img" src="assets/imgs/9/1.webp" alt="The Travelling Players"><abbr
-                        class="product__title" title="The Travelling Players">The Travelling Players</abbr><img
-                        class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">drama</p>
-                    <p class="product__releaseYear">1975</p>
-                    <p class="product__price">12.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                        <img class="product__img" src="assets/imgs/9/1.webp" alt="The Travelling Players"><abbr
+                            class="product__title" title="The Travelling Players">The Travelling Players</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">drama</p>
+                        <p class="product__releaseYear">1975</p>
+                        <p class="product__price">12.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">2311</p>
-                </article>
+                        <p class="product__sales">2311</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=10">
-                  <article class="product__card">
-                    <img class="product__img" src="assets/imgs/10/1.webp" alt="The Best Man"><abbr class="product__title"
-                        title="The Best Man">The Best Man</abbr><img class="product_wishlistBtn"
-                        src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">actie</p>
-                    <p class="product__releaseYear">2023</p>
-                    <p class="product__price">9.99</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                    <article class="product__card">
+                        <img class="product__img" src="assets/imgs/10/1.webp" alt="The Best Man"><abbr
+                            class="product__title" title="The Best Man">The Best Man</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn liked"></i>
+                        <p class="product__genre">actie</p>
+                        <p class="product__releaseYear">2023</p>
+                        <p class="product__price">9.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">1543</p>
-                </article>  
+                        <p class="product__sales">1543</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=11">
-                   <article class="product__card">
-                    <img class="product__img" src="assets/imgs/11/1.webp" alt="Satyricon"><abbr class="product__title"
-                        title="Satyricon">Satyricon</abbr><img class="product_wishlistBtn"
-                        src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">komedie</p>
-                    <p class="product__releaseYear">1969</p>
-                    <p class="product__price">5.85</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                    <article class="product__card">
+                        <img class="product__img" src="assets/imgs/11/1.webp" alt="Satyricon"><abbr
+                            class="product__title" title="Satyricon">Satyricon</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">komedie</p>
+                        <p class="product__releaseYear">1969</p>
+                        <p class="product__price">5.85</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">578</p>
-                </article> 
+                        <p class="product__sales">578</p>
+                    </article>
                 </a>
                 <a href="product.html/?id=12">
                     <article class="product__card">
-                    <img class="product__img" src="assets/imgs/12/1.webp" alt="The Public Enemy"><abbr
-                        class="product__title" title="The Public Enemy">The Public Enemy</abbr><img
-                        class="product_wishlistBtn" src="assets/icons/wishlist.svg" alt="wishlist">
-                    <p class="product__genre">misdaad</p>
-                    <p class="product__releaseYear">1931</p>
-                    <p class="product__price">5.52</p>
-                    <section id="product__score">
-                        <section>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                        <img class="product__img" src="assets/imgs/12/1.webp" alt="The Public Enemy"><abbr
+                            class="product__title" title="The Public Enemy">The Public Enemy</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">misdaad</p>
+                        <p class="product__releaseYear">1931</p>
+                        <p class="product__price">5.52</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
                         </section>
-                    </section>
-                    <p class="product__sales">819</p>
-                </article>
+                        <p class="product__sales">819</p>
+                    </article>
                 </a>
             </section>
         </section>

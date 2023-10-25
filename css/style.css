@@ -70,10 +70,10 @@ body {
   cursor: pointer;
 }
 .header__menu2__shopping, .header__menu2__wishlist, .header__menu2__profile {
-  margin: 0 0.5rem;
+  margin: auto 0.5rem;
   max-width: 30px;
-  text-align: center;
   cursor: pointer;
+  color: #6d30ed;
 }
 .header .ham_menu i {
   font-size: 1.6rem;
@@ -192,12 +192,12 @@ body {
   box-shadow: 0 0 30px 0 rgba(210, 193, 249, 0.5960784314);
   border-radius: 10px;
   min-width: 100%;
-  height: 600px;
+  height: 400px;
   cursor: pointer;
   display: grid;
   grid-template-areas: "img img" "title wishlistBtn" "genre ." "year ." "price ." "score score";
   grid-template-columns: 90% auto;
-  grid-template-rows: 60% auto auto auto auto auto;
+  grid-template-rows: 70% auto auto auto auto auto;
 }
 .product__card .product__img {
   margin: 0 auto;
@@ -214,6 +214,13 @@ body {
 .product__card .product_wishlistBtn {
   margin: auto;
   grid-area: wishlistBtn;
+  color: gray;
+}
+.product__card .product_wishlistBtn:hover {
+  color: #f94494;
+}
+.product__card .product_wishlistBtn.liked {
+  color: #f94494;
 }
 .product__card .product__genre {
   grid-area: genre;
@@ -252,8 +259,7 @@ body {
 }
 .product__card .product__sales {
   grid-area: score;
-  text-align: end;
-  margin: auto 0.5rem auto auto;
+  margin: auto 0.2rem auto auto;
   font-size: 0.8rem;
 }
 .product__card .product__sales::after {
@@ -872,6 +878,24 @@ body {
 
 /* --MEDIA QUERIES-- */
 @media (max-width: 320px) {
+  .product__card .product__title {
+    font-size: 1rem;
+  }
+  .product__card .product__genre {
+    font-size: 0.8rem;
+  }
+  .product__card .product__price {
+    font-size: 0.9rem;
+  }
+  .product__card .product__releaseYear {
+    font-size: 0.6rem;
+  }
+  .product__card .product__sales {
+    font-size: 0.6rem;
+  }
+  .product__card #product__score {
+    font-size: 0.7rem;
+  }
   /* --HOME-- */
   header .header__logo {
     font-size: 1.5rem;
@@ -882,8 +906,8 @@ body {
     align-items: end;
     position: fixed;
     top: 50px;
-    right: -1000%;
-    width: 100vw;
+    right: -105%;
+    min-width: 100vw;
     background-color: lightgrey;
     font-size: 1rem;
     transition: 0.5s all ease-in-out;
@@ -894,8 +918,8 @@ body {
     align-items: end;
     position: fixed;
     top: 250px;
-    right: -1000%;
-    width: 100vw;
+    right: -105%;
+    min-width: 100vw;
     min-height: auto;
     background-color: lightgrey;
     font-size: 2rem;
@@ -924,6 +948,9 @@ body {
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+  }
+  header .header__menu2__shopping, header .header__menu2__wishlist, header .header__menu2__profile {
+    margin-right: 1rem;
   }
   header .header__menu.active,
   header .header__menu2.active {
@@ -972,7 +999,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 1rem auto;
-    grid-template-columns: 1fr;
     gap: 1rem;
   }
   .about {
@@ -1258,7 +1284,8 @@ body {
   .detail__makeReview form label {
     font-size: 1.2rem;
   }
-  .detail__makeReview form input[type=text], .detail__makeReview form input[type=email] {
+  .detail__makeReview form input[type=text],
+  .detail__makeReview form input[type=email] {
     font-size: 0.8rem;
     min-width: 80vw;
   }
@@ -1284,6 +1311,24 @@ body {
   }
 }
 @media (min-width: 321px) and (max-width: 480px) {
+  .product__card .product__title {
+    font-size: 1.2rem;
+  }
+  .product__card .product__genre {
+    font-size: 0.9rem;
+  }
+  .product__card .product__price {
+    font-size: 0.9rem;
+  }
+  .product__card .product__releaseYear {
+    font-size: 0.6rem;
+  }
+  .product__card .product__sales {
+    font-size: 0.6rem;
+  }
+  .product__card #product__score {
+    font-size: 0.7rem;
+  }
   /* --HOME-- */
   header .header__logo {
     font-size: 1.5rem;
@@ -1294,8 +1339,8 @@ body {
     align-items: end;
     position: fixed;
     top: 50px;
-    right: -1000%;
-    width: 100vw;
+    right: -105%;
+    min-width: 100vw;
     background-color: lightgrey;
     font-size: 1rem;
     transition: 0.5s all ease-in-out;
@@ -1306,8 +1351,8 @@ body {
     align-items: end;
     position: fixed;
     top: 250px;
-    right: -1000%;
-    width: 100vw;
+    right: -105%;
+    min-width: 100vw;
     min-height: auto;
     background-color: lightgrey;
     font-size: 2rem;
@@ -1336,6 +1381,9 @@ body {
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+  }
+  header .header__menu2__shopping, header .header__menu2__wishlist, header .header__menu2__profile {
+    margin-right: 1rem;
   }
   header .header__menu.active,
   header .header__menu2.active {
@@ -1683,7 +1731,8 @@ body {
   .detail__makeReview form label {
     font-size: 1.2rem;
   }
-  .detail__makeReview form input[type=text], .detail__makeReview form input[type=email] {
+  .detail__makeReview form input[type=text],
+  .detail__makeReview form input[type=email] {
     font-size: 0.8rem;
     min-width: 80vw;
   }
@@ -1718,15 +1767,14 @@ body {
   header .header__menu {
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: end;
     position: fixed;
     top: 50px;
-    right: -1000%;
-    width: 100vw;
+    right: -105%;
+    min-width: 100vw;
     background-color: lightgrey;
     font-size: 1rem;
-    transition: 0.5s;
+    transition: 0.5s all ease-in-out;
   }
   header .header__menu2 {
     display: flex;
@@ -1734,8 +1782,8 @@ body {
     align-items: end;
     position: fixed;
     top: 250px;
-    right: -1000%;
-    width: 100vw;
+    right: -105%;
+    min-width: 100vw;
     min-height: auto;
     background-color: lightgrey;
     font-size: 2rem;
@@ -1743,9 +1791,7 @@ body {
     border-radius: 0 0 10px 30px;
   }
   header .header__menu2 form {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: end;
     margin: 0.5rem 0.5rem;
   }
@@ -1754,7 +1800,6 @@ body {
     opacity: 1;
     border-radius: 10px;
     padding: 0.2rem 1rem;
-    font-size: 1rem;
     margin: 0.5rem 0;
     color: #000;
   }
@@ -1762,7 +1807,6 @@ body {
     border: 1px solid #6d30ed;
     border-radius: 10px;
     padding: 0.2rem 1rem;
-    font-size: 1rem;
     margin: 0.5rem 0;
     background-color: #6d30ed;
     color: #fff;
@@ -1827,8 +1871,23 @@ body {
   .footer .socials__link:hover {
     border-bottom: 2px solid #6d30ed;
   }
-  .product__card {
-    min-width: 100%;
+  .product__card .product__title {
+    font-size: 1.2rem;
+  }
+  .product__card .product__genre {
+    font-size: 0.9rem;
+  }
+  .product__card .product__price {
+    font-size: 0.9rem;
+  }
+  .product__card .product__releaseYear {
+    font-size: 0.6rem;
+  }
+  .product__card .product__sales {
+    font-size: 0.6rem;
+  }
+  .product__card #product__score {
+    font-size: 0.7rem;
   }
   /* --HOME-- */
   header .header__logo {
@@ -2235,8 +2294,23 @@ body {
   .footer .socials__link:hover {
     border-bottom: 2px solid #6d30ed;
   }
-  .product__card {
-    min-width: 100%;
+  .product__card .product__title {
+    font-size: 1rem;
+  }
+  .product__card .product__genre {
+    font-size: 0.8rem;
+  }
+  .product__card .product__price {
+    font-size: 0.9rem;
+  }
+  .product__card .product__releaseYear {
+    font-size: 0.6rem;
+  }
+  .product__card .product__sales {
+    font-size: 0.6rem;
+  }
+  .product__card #product__score {
+    font-size: 0.7rem;
   }
   /* --HOME-- */
   .banner {
@@ -2400,8 +2474,23 @@ body {
   }
 }
 @media (min-width: 1201px) {
-  .product__card {
-    min-width: 100%;
+  .product__card .product__title {
+    font-size: 1.2rem;
+  }
+  .product__card .product__genre {
+    font-size: 0.9rem;
+  }
+  .product__card .product__price {
+    font-size: 0.9rem;
+  }
+  .product__card .product__releaseYear {
+    font-size: 0.6rem;
+  }
+  .product__card .product__sales {
+    font-size: 0.6rem;
+  }
+  .product__card #product__score {
+    font-size: 0.7rem;
   }
   .ham_menu {
     display: none;

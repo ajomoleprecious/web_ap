@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Precious Ajomole">
+    <meta name="description" content="Web winkel voor movies">
+    <title>WatchMovies | Contact</title>
+    <link rel="shortcut icon" href="assets/icons/website_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a id="logo" class="header__logo" href="index.html"><img class="logo__img" src="assets/imgs/logo.webp"
+                alt="logo">Watch<span>Movies</span></a>
+        <nav>
+            <ul class="header__menu">
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="shop.html">Shop</a></li>
+                <li class="menu__item"><a href="product.html">Product</a></li>
+                <li class="menu__item menu__item--active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="header__menu2">
+            <form method="get">
+                <input class="header__menu2__search" type="text" placeholder="zoek een product" name="search"
+                    id="productSearch">
+                <input class="header__menu2__searchButton" type="submit" value="Zoek">
+            </form>
+            <a class="header__menu2__shopping" href="#"><img src="assets/icons/shopping-cart.svg" alt="cart"></a>
+            <a class="header__menu2__wishlist" href="#"><img src="assets/icons/wishlist.svg" alt="wishlist"></a>
+            <a class="header__menu2__profile" href="#"><img src="assets/icons/profile.svg" alt="profile"></a>
+        </section>
+        <section class="ham_menu">
+            <input type="checkbox" id="check">
+            <label for="check"><i class="fa fa-bars"></i></label>
+        </section>
+    </header>
+    <main>
+        <section class="contact">
+            <h1 class="contact__title">Contact</h1>
+            <form class="contact__form" action="contact.php" method="post">
+                <label class="contact__form__label" for="name">Naam</label>
+                <input class="contact__form__inputNaam" type="text" name="name" id="name" placeholder="Naam" required autocomplete="name">
+                <label class="contact__form__label" for="email">Email</label>
+                <input class="contact__form__inputEmail" type="email" name="email" id="email" placeholder="Email" required autocomplete="email">
+                <label class="contact__form__label" for="message">Bericht</label>
+                <textarea class="contact__form__inputMessage" name="message" id="message" cols="30" rows="10"
+                    placeholder="Bericht" required></textarea>
+                <input class="contact__form__submit" type="submit" value="Stuur bericht">
+            </form>
+        </section>
+        <section class="contact__map">
+            <img src="assets/imgs/map_with_pointer.webp" alt="map_with_pointer">
+        </section>
+        <a href="#logo"><img class="backToTop" src="assets/icons/up-arrow.svg" alt="up-arrow"></a>
+    </main>
+    <footer class="footer">
+        <a class="footer__logo" href="index.html"><img class="logo__img" src="assets/imgs/logo.webp" alt="logo"></a>
+        <nav>
+            <ul class="footer__menu">
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="shop.html">Shop</a></li>
+                <li class="menu__item"><a href="product.html">Product</a></li>
+                <li class="menu__item menu__item--active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <p>&copy;2023&dash;WatchMovies&dash;</p>
+            <a class="socials__link" href="#"><img src="assets/icons/facebook.svg" alt="facebook"></a>
+            <a class="socials__link" href="#"><img src="assets/icons/instagram.svg" alt="instagram"></a>
+            <a class="socials__link" href="#"><img src="assets/icons/twitter.svg" alt="twitter"></a>
+        </section>
+        <script src="https://kit.fontawesome.com/cd8c9527e1.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </footer>
+</body>
+
+</html>

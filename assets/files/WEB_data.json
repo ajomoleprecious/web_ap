@@ -1,0 +1,754 @@
+{
+    "movies": [
+        {
+            "movie": {
+                "id": 1,
+                "title": "Little Miss Broadway",
+                "director": "Irving Cummings",
+                "genre": "drama",
+                "release_year": 1938,
+                "price": 9.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/1/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/1/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/1/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "John Doe",
+                        "rating": 4,
+                        "comment": "A classic comedy that still brings joy."
+                    },
+                    {
+                        "user": "Jane Smith",
+                        "rating": 5,
+                        "comment": "Hilarious and heartwarming. A must-watch!"
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/CkhPE6Y2v9s",
+                "description": "Een wees wordt voorlopig geadopteerd door de manager van een hotel dat bevolkt wordt door mensen uit de showbusiness. De hoteleigenaar mag de entertainers niet en wil het meisje terug naar het weeshuis.",
+                "sales": 5000
+            }
+        },
+        {
+            "movie": {
+                "id": 2,
+                "title": "The Small Town (a.k.a. The Town)",
+                "director": "Nuri Bilge Ceylan",
+                "genre": "drama",
+                "release_year": 1997,
+                "price": 12.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/2/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/2/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/2/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Bale Shankle",
+                        "rating": 4,
+                        "comment": "A gripping thriller with unexpected twists."
+                    },
+                    {
+                        "user": "Wyndham Moyce",
+                        "rating": 5,
+                        "comment": "Intriguing and suspenseful. Kept me on the edge of my seat."
+                    },
+                    {
+                        "user": "Laney Kilmartin",
+                        "rating": 3,
+                        "comment": "The plot was a bit confusing, but the suspense was great."
+                    },
+                    {
+                        "user": "Carmelle Garrand",
+                        "rating": 5,
+                        "comment": "A must-watch for thriller enthusiasts. Outstanding performance."
+                    },
+                    {
+                        "user": "Laughton Ferrettino",
+                        "rating": 4,
+                        "comment": "The movie is a rollercoaster of emotions. Highly recommended."
+                    },
+                    {
+                        "user": "Yasmin Marston",
+                        "rating": 4,
+                        "comment": "Great character development and an intense storyline."
+                    },
+                    {
+                        "user": "Dot Bartomeu",
+                        "rating": 5,
+                        "comment": "A masterpiece of suspense and intrigue. A must-see thriller."
+                    },
+                    {
+                        "user": "Darla Desaur",
+                        "rating": 5,
+                        "comment": "Fantastic film with a gripping storyline."
+                    },
+                    {
+                        "user": "Emlyn Copley",
+                        "rating": 1,
+                        "comment": "I didn't enjoy this movie. It was confusing and slow-paced."
+                    },
+                    {
+                        "user": "Gavrielle Chettle",
+                        "rating": 0,
+                        "comment": "This movie wasn't my cup of tea. I couldn't connect with it."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/CbXIBUKxsvE",
+                "description": "Het verhaal van een familie in een klein godvergeten stadje in Turkije, gezien door de ogen van kinderen en het omgaan met de groeiende complexiteit wanneer men volwassen wordt.",
+                "sales": 5000
+            }
+        },
+        {
+            "movie": {
+                "id": 3,
+                "title": "Hercules",
+                "director": "Ron Clements",
+                "genre": "animatie",
+                "release_year": 1997,
+                "price": 14.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/3/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/3/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/3/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Cobbie Hanrott",
+                        "rating": 4,
+                        "comment": "A powerful drama with exceptional performances."
+                    },
+                    {
+                        "user": "Trenna Bielfeldt",
+                        "rating": 3,
+                        "comment": "A thought-provoking movie that explores deep themes."
+                    },
+                    {
+                        "user": "Clive Hedge",
+                        "rating": 3,
+                        "comment": "The character development in this drama is outstanding."
+                    },
+                    {
+                        "user": "Myranda Pocklington",
+                        "rating": 3,
+                        "comment": "An emotionally charged film with a compelling storyline."
+                    },
+                    {
+                        "user": "Marybelle Kassel",
+                        "rating": 1,
+                        "comment": "Unfortunately, I didn't enjoy this movie. It wasn't my taste."
+                    },
+                    {
+                        "user": "Aluin Clinning",
+                        "rating": 5,
+                        "comment": "Hercules is a masterpiece of the drama genre. A must-watch!"
+                    },
+                    {
+                        "user": "Cecilio Fones",
+                        "rating": 1,
+                        "comment": "I found this movie slow-paced and uninteresting."
+                    },
+                    {
+                        "user": "Kirsteni Demongeot",
+                        "rating": 1,
+                        "comment": "Not my favorite. I couldn't connect with the story."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/ZvtspevZxpg",
+                "description": "De zoon van Zeus en Hera wordt als baby van zijn onsterfelijkheid beroofd en moet een ware held worden om deze terug te winnen.",
+                "sales": 10000
+            }
+        },
+        {
+            "movie": {
+                "id": 4,
+                "title": "The Child (L'enfant)",
+                "director": "Jean-Pierre Dardenne",
+                "genre": "misdaad",
+                "release_year": 2005,
+                "price": 19.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/4/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/4/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/4/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Crin Van Zon",
+                        "rating": 1,
+                        "comment": "Unfortunately, I didn't enjoy this adventure film. It was slow-paced and uninteresting."
+                    },
+                    {
+                        "user": "Brenna Rathborne",
+                        "rating": 2,
+                        "comment": "The movie had potential, but it didn't live up to my expectations."
+                    },
+                    {
+                        "user": "Wileen Hayto",
+                        "rating": 3,
+                        "comment": "I found the storyline intriguing, but it could have been executed better."
+                    },
+                    {
+                        "user": "Devi Craggs",
+                        "rating": 2,
+                        "comment": "I expected more from an adventure film. It felt lacking."
+                    },
+                    {
+                        "user": "Robyn Collete",
+                        "rating": 3,
+                        "comment": "There were some good moments, but overall, it didn't fully engage me."
+                    },
+                    {
+                        "user": "Kingsly Crewe",
+                        "rating": 0,
+                        "comment": "This movie didn't resonate with me. I couldn't connect with the story."
+                    },
+                    {
+                        "user": "Colette Scatcher",
+                        "rating": 5,
+                        "comment": "Despite mixed reviews, I thoroughly enjoyed the adventure and suspense in this film. A unique experience!"
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/fU3mndctyJM",
+                "description": "Bruno en Sonia, een jong stel dat leeft van haar uitkering en de diefstallen van zijn bende, hebben een nieuwe geldbron: hun pasgeboren zoon.",
+                "sales": 1000
+            }
+        },
+        {
+            "movie": {
+                "id": 5,
+                "title": "The Great White Hype",
+                "director": "Reginald Hudlin",
+                "genre": "komedie",
+                "release_year": 1996,
+                "price": 9.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/5/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/5/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/5/3.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/5/4.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Gabie Laver",
+                        "rating": 2,
+                        "comment": "I found the action scenes thrilling, but the overall plot was lacking."
+                    },
+                    {
+                        "user": "Nerissa Botright",
+                        "rating": 2,
+                        "comment": "The movie didn't meet my expectations for an action film."
+                    },
+                    {
+                        "user": "Graehme Jobern",
+                        "rating": 5,
+                        "comment": "I thoroughly enjoyed the adrenaline-pumping action and suspense. A great movie for action lovers!"
+                    },
+                    {
+                        "user": "Shepperd McCloy",
+                        "rating": 4,
+                        "comment": "The action sequences were well-executed and kept me engaged."
+                    },
+                    {
+                        "user": "Sophia Glasgow",
+                        "rating": 5,
+                        "comment": "This action-packed movie kept me on the edge of my seat. Highly recommended for action enthusiasts!"
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/WnyftZZ880s",
+                "description": "De promotor van de bokskampioen denkt dat er verandering nodig is. Hij vindt de enige man die zijn zwarte kampioen heeft verslagen (op zijn 17e), een blanke man die nu in een rockband zit. Net als Rocky traint hij zwaar, terwijl de kampioen een slappe broek heeft.",
+                "sales": 5000
+            }
+        },
+        {
+            "movie": {
+                "id": 6,
+                "title": "The Sun Also Rises",
+                "director": "Henry King",
+                "genre": "drama",
+                "release_year": 1957,
+                "price": 12.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/6/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/6/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/6/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Gerardo Buckmaster",
+                        "rating": 4,
+                        "comment": "I enjoyed the fantasy elements and the engaging storyline."
+                    },
+                    {
+                        "user": "Josselyn Gutans",
+                        "rating": 5,
+                        "comment": "A fantastic fantasy film with a captivating plot. I highly recommend it."
+                    },
+                    {
+                        "user": "Bronny Philips",
+                        "rating": 2,
+                        "comment": "The movie had some good fantasy elements, but it fell short in some areas."
+                    },
+                    {
+                        "user": "Chere Marieton",
+                        "rating": 3,
+                        "comment": "A decent fantasy movie with room for improvement in the storytelling."
+                    },
+                    {
+                        "user": "Sansone Dumphy",
+                        "rating": 2,
+                        "comment": "The fantasy elements were interesting, but the plot had some shortcomings."
+                    },
+                    {
+                        "user": "Shaughn Epdell",
+                        "rating": 0,
+                        "comment": "The movie didn't live up to my expectations for a fantasy film."
+                    },
+                    {
+                        "user": "Hermann Rosa",
+                        "rating": 5,
+                        "comment": "I thoroughly enjoyed the fantasy world and characters. Highly recommended!"
+                    },
+                    {
+                        "user": "Erroll Pollington",
+                        "rating": 1,
+                        "comment": "The movie's plot and execution left much to be desired."
+                    },
+                    {
+                        "user": "Emelen Farmar",
+                        "rating": 5,
+                        "comment": "An excellent fantasy movie with a compelling storyline. A must-see!"
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/xplPS8AUMT0",
+                "description": "Een groep gedesillusioneerde Amerikaanse expatschrijvers leeft een losbandige, hedonistische levensstijl in het Frankrijk en Spanje van de jaren 1920.",
+                "sales": 15000
+            }
+        },
+        {
+            "movie": {
+                "id": 7,
+                "title": "Tracks",
+                "director": "John Curran",
+                "genre": "avontuur",
+                "release_year": 2013,
+                "price": 14.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/7/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/7/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/7/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Bab Cleyburn",
+                        "rating": 3,
+                        "comment": "The movie had some interesting sci-fi concepts, but it left room for improvement."
+                    },
+                    {
+                        "user": "Dawn Evesque",
+                        "rating": 4,
+                        "comment": "A sci-fi film with great potential. I enjoyed the imaginative aspects of the story."
+                    },
+                    {
+                        "user": "Karoly Schimank",
+                        "rating": 5,
+                        "comment": "A fantastic sci-fi movie with a compelling plot and excellent character development."
+                    },
+                    {
+                        "user": "Abbey Rickis",
+                        "rating": 5,
+                        "comment": "This sci-fi film exceeded my expectations. I loved the world-building and storytelling."
+                    },
+                    {
+                        "user": "Kassandra Wanka",
+                        "rating": 1,
+                        "comment": "I was disappointed with this sci-fi movie. The plot was confusing, and it didn't meet my expectations."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/yznGd7yiAoA",
+                "description": "Een jonge vrouw maakt een trektocht van 1700 kilometer door de woestijn van West-Australië met vier kamelen en haar trouwe hond.",
+                "sales": 8500
+            }
+        },
+        {
+            "movie": {
+                "id": 8,
+                "title": "Nasty Old People",
+                "director": "Ami-Ro Sköld",
+                "genre": "drama",
+                "release_year": 2009,
+                "price": 14.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/8/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/8/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/8/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Clarabelle Rossander",
+                        "rating": 5,
+                        "comment": "Nasty Old People is an action-packed thriller that keeps you on the edge of your seat. Highly recommended!"
+                    },
+                    {
+                        "user": "Pietrek Aneley",
+                        "rating": 0,
+                        "comment": "I didn't enjoy this movie. The action scenes felt unrealistic, and the plot was confusing."
+                    },
+                    {
+                        "user": "Umberto Tiptaft",
+                        "rating": 0,
+                        "comment": "Nasty Old People lacked a coherent storyline, and the action sequences were unconvincing."
+                    },
+                    {
+                        "user": "Dody Gerlack",
+                        "rating": 5,
+                        "comment": "I loved the action in this movie. It was intense, and the characters were well-developed."
+                    },
+                    {
+                        "user": "Gavin Yackiminie",
+                        "rating": 1,
+                        "comment": "Nasty Old People didn't meet my expectations. The action was over-the-top, and the story felt disconnected."
+                    },
+                    {
+                        "user": "Cybil Rock",
+                        "rating": 5,
+                        "comment": "A thrilling action movie with outstanding sequences. It's a must-see for action enthusiasts!"
+                    },
+                    {
+                        "user": "Lucio Kellick",
+                        "rating": 4,
+                        "comment": "Nasty Old People delivered solid action and kept me engaged throughout. A good choice for action fans."
+                    },
+                    {
+                        "user": "Caroljean Byrne",
+                        "rating": 5,
+                        "comment": "This action film was packed with excitement and had a compelling story. I thoroughly enjoyed it."
+                    },
+                    {
+                        "user": "Emyle Evetts",
+                        "rating": 4,
+                        "comment": "Nasty Old People offered a thrilling experience with intense action scenes. It's a great choice for action movie lovers."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/mT-bmjQUiIQ",
+                "description": "Dit is het verhaal van Mette. Ze is lid van een neonazi-bende en heeft als dagtaak het verzorgen van vier senioren die allemaal wachten om te sterven. Haar leven wordt een reis naar een burlesk sprookje, waar de spelregels door Mette zelf zijn bedacht. Mette is onverschillig over haar manier van leven, totdat ze op een nacht een man aanvalt en hem bewusteloos schopt. De dag erna wordt ze wakker en realiseert ze zich dat er iets mis is. Samen met de gekke oudjes verlangt ze naar respect en liefde. Samen creëren ze hun eigen wereld. Een wereld waarvan je niet wist dat hij bestond",
+                "sales": 5897
+            }
+        },
+        {
+            "movie": {
+                "id": 9,
+                "title": "The Travelling Players",
+                "director": "Theodoros Angelopoulos",
+                "genre": "drama",
+                "release_year": 1975,
+                "price": 12.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/9/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/9/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/9/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Reinaldos Tillot",
+                        "rating": 1,
+                        "comment": "The Travelling Players is a confusing film with an unclear plot. I didn't enjoy it."
+                    },
+                    {
+                        "user": "Waldemar Axtonne",
+                        "rating": 4,
+                        "comment": "I found the movie intriguing, and the characters were well-developed. It's worth watching for those who appreciate complex narratives."
+                    },
+                    {
+                        "user": "Reina Wethers",
+                        "rating": 1,
+                        "comment": "The plot was hard to follow, and the movie lacked coherence. I was disappointed."
+                    },
+                    {
+                        "user": "Leah Corbishley",
+                        "rating": 1,
+                        "comment": "The Travelling Players left me bewildered. The story felt disjointed, and I struggled to connect with the characters."
+                    },
+                    {
+                        "user": "Mateo Firsby",
+                        "rating": 1,
+                        "comment": "I had a difficult time understanding the movie. The plot seemed fragmented and confusing."
+                    },
+                    {
+                        "user": "Berkly Collister",
+                        "rating": 3,
+                        "comment": "While the movie had its confusing moments, it also had some thought-provoking aspects. It's a film that might require multiple viewings to fully grasp."
+                    },
+                    {
+                        "user": "Cristine Ebertz",
+                        "rating": 4,
+                        "comment": "The Travelling Players is an intellectually stimulating film. It challenges the viewer with its complex narrative."
+                    },
+                    {
+                        "user": "Wandis Folli",
+                        "rating": 0,
+                        "comment": "I couldn't connect with the movie's storyline, and the plot felt disjointed. It wasn't my cup of tea."
+                    },
+                    {
+                        "user": "Clayborne Blindmann",
+                        "rating": 1,
+                        "comment": "The film's lack of a clear narrative made it hard to follow. It left me feeling unsatisfied."
+                    },
+                    {
+                        "user": "Erek Hise",
+                        "rating": 5,
+                        "comment": "The Travelling Players is a masterpiece of adventure cinema. Its complexity is its strength, offering layers of meaning for those who dive deep into its narrative."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/9OeQMxgAbJc",
+                "description": "Griekenland, 1939-1952: Fascistisch, nazistisch en communistisch conflict, gezien door de ogen van een familie van reizende provinciale spelers.",
+                "sales": 2311
+            }
+        },
+        {
+            "movie": {
+                "id": 10,
+                "title": "The Best Man",
+                "director": "Shane Dax Taylor",
+                "genre": "actie",
+                "release_year": 2023,
+                "price": 9.99,
+                "images": [
+                    {
+                        "image_url": "../imgs/10/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/10/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/10/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Francine Causby",
+                        "rating": 2,
+                        "comment": "I found The Best Man to be somewhat confusing. The plot lacked clarity, and it left me wanting more."
+                    },
+                    {
+                        "user": "Lanny Tadman",
+                        "rating": 5,
+                        "comment": "The Best Man is a captivating adventure film. It offers a rich storyline and well-developed characters."
+                    },
+                    {
+                        "user": "Loralee Bartlomiej",
+                        "rating": 0,
+                        "comment": "I struggled to connect with The Best Man. It had a disjointed plot, and I couldn't engage with the story."
+                    },
+                    {
+                        "user": "Herold Lugg",
+                        "rating": 3,
+                        "comment": "The Best Man presented an interesting adventure, but it had moments of confusion. It's worth watching if you appreciate complexity."
+                    },
+                    {
+                        "user": "Lauree Pelos",
+                        "rating": 3,
+                        "comment": "The Best Man is a film with potential, but it can be perplexing at times. It requires some patience to fully grasp."
+                    },
+                    {
+                        "user": "Ginevra Busch",
+                        "rating": 4,
+                        "comment": "I enjoyed The Best Man's adventure elements. While it had its complexities, it offered a rewarding viewing experience."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/dgVp6kaE1UU",
+                "description": "Huurlingen grijpen de controle over een afgelegen hotel tijdens een bruiloft en het is aan de getuige, de bruidegom en hun dronken beste vriend om de terroristen te stoppen en de gijzelaars te redden.",
+                "sales": 1543
+            }
+        },
+        {
+            "movie": {
+                "id": 11,
+                "title": "Satyricon",
+                "director": "Gian Luigi Polidoro",
+                "genre": "komedie",
+                "release_year": 1969,
+                "price": 5.85,
+                "images": [
+                    {
+                        "image_url": "../imgs/11/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/11/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/11/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Moreen Greatrex",
+                        "rating": 4,
+                        "comment": "Satyricon is a captivating adventure. It provides an engaging story and an adventurous journey. I thoroughly enjoyed it."
+                    },
+                    {
+                        "user": "Sebastian Bedlington",
+                        "rating": 3,
+                        "comment": "Satyricon offers a complex narrative with intriguing characters. It might require some patience to fully appreciate."
+                    },
+                    {
+                        "user": "Carine Sibson",
+                        "rating": 2,
+                        "comment": "I found Satyricon's plot a bit lacking in depth. It didn't quite meet my expectations."
+                    },
+                    {
+                        "user": "Ardine Whate",
+                        "rating": 2,
+                        "comment": "The storytelling in Satyricon had its moments, but overall, it left me wanting more depth and clarity."
+                    },
+                    {
+                        "user": "Amble Felton",
+                        "rating": 3,
+                        "comment": "Satyricon's narrative has its moments of brilliance but also some confusion. It's worth watching if you appreciate complexity."
+                    },
+                    {
+                        "user": "Basile Lishman",
+                        "rating": 0,
+                        "comment": "Satyricon's complexity might not be for everyone. I found it hard to connect with the storyline."
+                    },
+                    {
+                        "user": "Chauncey Pettitt",
+                        "rating": 1,
+                        "comment": "I struggled to fully engage with Satyricon. It didn't meet my expectations."
+                    },
+                    {
+                        "user": "Adrien Pitkins",
+                        "rating": 0,
+                        "comment": "Satyricon's narrative had moments of intrigue, but it was also quite confusing. It's not a film for those seeking a straightforward plot."
+                    },
+                    {
+                        "user": "Anatol Chasmar",
+                        "rating": 4,
+                        "comment": "Satyricon offers a unique adventure with complex storytelling. It's a film that rewards those who appreciate intricate narratives."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/RrBUdUYL71s",
+                "description": "Lustige avonturen van twee mannen en een travestiet ten tijde van Nero in Rome.",
+                "sales": 578
+            }
+        },
+        {
+            "movie": {
+                "id": 12,
+                "title": "The Public Enemy",
+                "director": "William A. Wellman",
+                "genre": "misdaad",
+                "release_year": 1931,
+                "price": 5.52,
+                "images": [
+                    {
+                        "image_url": "../imgs/12/1.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/12/2.jpg"
+                    },
+                    {
+                        "image_url": "../imgs/12/3.jpg"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "user": "Trevar Tschiersch",
+                        "rating": 5,
+                        "comment": "The Public Enemy is a thrilling adventure with an engaging storyline and fantastic characters. I highly recommend it."
+                    },
+                    {
+                        "user": "Ludvig Dashkovich",
+                        "rating": 3,
+                        "comment": "The Public Enemy offers some exciting moments but could benefit from more depth in the plot."
+                    },
+                    {
+                        "user": "Tildi Sturmey",
+                        "rating": 1,
+                        "comment": "I found The Public Enemy lacking in storytelling depth, and it didn't hold my interest."
+                    },
+                    {
+                        "user": "Sheilakathryn Maving",
+                        "rating": 4,
+                        "comment": "The Public Enemy presents an intriguing story with well-developed characters. It's worth watching if you enjoy adventure films."
+                    },
+                    {
+                        "user": "Lauri Boddie",
+                        "rating": 1,
+                        "comment": "I expected more from The Public Enemy. The plot is somewhat lacking in depth and development."
+                    },
+                    {
+                        "user": "Libbey Vannet",
+                        "rating": 5,
+                        "comment": "The Public Enemy is a fantastic adventure film with a compelling narrative and great character development. Highly recommended."
+                    },
+                    {
+                        "user": "Lexine Knill",
+                        "rating": 4,
+                        "comment": "The Public Enemy offers a well-developed story and compelling characters. It's an enjoyable adventure."
+                    }
+                ],
+                "trailer_url": "https://youtube.com/embed/RJfNRJLxD6Q",
+                "description": "Een Iers-Amerikaanse straatschoffie probeert het te maken in de wereld van de georganiseerde misdaad.",
+                "sales": 819
+            }
+        }
+    ]
+}

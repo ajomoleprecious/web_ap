@@ -25,18 +25,21 @@
             </ul>
         </nav>
         <section class="header__menu2">
-            <form method="get">
-                <input class="header__menu2__search" type="text" placeholder="zoek een product" name="search"
-                    id="productSearch">
+            <form action="#" method="get">
+                <input class="header__menu2__search" type="text" placeholder="zoek een product" name="search">
                 <input class="header__menu2__searchButton" type="submit" value="Zoek">
             </form>
-            <a class="header__menu2__shopping" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a class="header__menu2__wishlist" href="#"><i class="fa-solid fa-heart"></i></a>
-            <a class="header__menu2__profile" href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#" class="header__menu2__shopping" aria-label="link to shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="header__menu2__wishlist" aria-label="link to whishlist"><i class="fa-solid fa-heart"></i></a>
+            <a href="#" class="header__menu2__profile" aria-label="link to adjust user settings"><i class="fa-solid fa-user"></i></a>
         </section>
         <section class="ham_menu">
-            <input type="checkbox" id="check">
-            <label for="check"><i class="fa fa-bars"></i></label>
+            <form action="#">
+                <input type="checkbox" id="check" name="toggleMenu">
+                <label for="check" class="checkbtn" aria-label="button to toggle nav menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </form>
         </section>
     </header>
     <main>
@@ -234,8 +237,7 @@
                     <article class="product__card">
                         <img class="product__img" src="assets/imgs/2/1.webp"
                             alt="The Small Town (a.k.a. The Town)"><abbr class="product__title"
-                            title="The Small Town (a.k.a. The Town)">The Small Town (a.k.a. The
-                            Town)</abbr><i class="fa-solid fa-heart product_wishlistBtn"></i>
+                            title="The Small Town">The Small Town</abbr><i class="fa-solid fa-heart product_wishlistBtn"></i>
                         <p class="product__genre">drama</p>
                         <p class="product__releaseYear">1997</p>
                         <p class="product__price">12.99</p>
@@ -466,14 +468,19 @@
             </ul>
         </nav>
         <section class="socials">
-            <p>&copy;2023&dash;WatchMovies&dash;</p>
-            <a class="socials__link" href="#"><img src="assets/icons/facebook.svg" alt="facebook"></a>
-            <a class="socials__link" href="#"><img src="assets/icons/instagram.svg" alt="instagram"></a>
-            <a class="socials__link" href="#"><img src="assets/icons/twitter.svg" alt="twitter"></a>
+            <section>
+                <a class="socials__link" target="_blank" aria-label="link to ap facebook" href="https://www.facebook.com/APHogeschool/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="socials__link" target="_parent" aria-label="link to ap instagram" href="https://www.instagram.com/aphogeschool/"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="socials__link" target="_blank" aria-label="link to ap twitter" href="https://twitter.com/AP_Hogeschool"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </section>
+            <p>&copy;2023&mdash;WatchMovies</p><br>
+
         </section>
         <script src="https://kit.fontawesome.com/cd8c9527e1.js" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
-        <script src="js/shop.js"></script>
     </footer>
 </body>
 

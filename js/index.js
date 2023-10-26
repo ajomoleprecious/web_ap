@@ -10,6 +10,15 @@ const toggleToTopButton = () => {
   toTop.classList.toggle("show", window.scrollY > 120);
 };
 
+toTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "auto",
+  });
+});
+
+window.addEventListener("scroll", toggleToTopButton);
+
 // Function to toggle the "active" class on the menu elements
 const toggleMenu = () => {
   menu1.classList.toggle("active");

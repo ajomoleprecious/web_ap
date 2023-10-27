@@ -24,8 +24,8 @@ body {
   color: #6d30ed;
 }
 .header__logo img {
-  max-width: 70px;
-  max-height: 50px;
+  width: 60px;
+  height: 50px;
   border-radius: 0 20px 20px 0;
 }
 .header__menu {
@@ -88,21 +88,25 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
   background-color: rgba(210, 193, 249, 0.5960784314);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  opacity: 0;
+  z-index: 1;
   visibility: hidden;
   transition: all 0.5s ease-in-out;
 }
 .backToTop.show {
   opacity: 1;
   visibility: visible;
+}
+.backToTop .fa-arrow-up {
+  margin: 0.2rem;
+  font-size: 1.3rem;
 }
 
 .footer {
@@ -115,8 +119,8 @@ body {
   align-items: center;
 }
 .footer__logo img {
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 .footer__menu {
@@ -187,31 +191,33 @@ body {
 }
 .banner .banner__img {
   grid-area: banner__img;
-  display: flex;
 }
 .banner .banner__img img {
-  min-width: 100%;
-  aspect-ratio: auto;
+  width: 100%;
+  height: 100%;
   border-radius: 0 50px 50px 0;
 }
 
 .product__card {
   box-shadow: 0 0 30px 0 rgba(210, 193, 249, 0.5960784314);
   border-radius: 10px;
-  min-width: 100%;
-  height: 400px;
+  width: 100%;
+  height: 300px;
   cursor: pointer;
   display: grid;
   grid-template-areas: "img img" "title wishlistBtn" "genre ." "year ." "price ." "score score";
   grid-template-columns: 90% auto;
-  grid-template-rows: 70% auto auto auto auto auto;
+  grid-template-rows: 60% auto;
 }
 .product__card .product__img {
-  margin: 0 auto;
-  min-width: 100%;
-  min-height: 100%;
-  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
   grid-area: img;
+}
+.product__card .product__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .product__card .product__title {
   grid-area: title;
@@ -237,7 +243,7 @@ body {
 }
 .product__card .product__releaseYear {
   grid-area: year;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   background-color: rgba(210, 193, 249, 0.5960784314);
   color: #fff;
@@ -290,10 +296,11 @@ body {
 }
 .most #mostSoldProducts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-  margin: 2rem 0;
-  align-items: center;
+  margin: 1rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15em;
+  justify-content: center;
+  align-content: center;
 }
 
 .about {
@@ -319,9 +326,8 @@ body {
   background-color: rgba(210, 193, 249, 0.5960784314);
   border-radius: 50px 0 0 50px;
 }
-.about .location .location__img img {
-  width: 100%;
-  border-radius: 50px;
+.about .location .location__img .fa-shop {
+  font-size: 10rem;
 }
 .about .location .location__text {
   grid-area: location__text;
@@ -355,9 +361,8 @@ body {
   background-color: rgba(210, 193, 249, 0.5960784314);
   border-radius: 0 50px 50px 0;
 }
-.about .mission .mission__img img {
-  width: 100%;
-  border-radius: 50px;
+.about .mission .mission__img .fa-bullseye {
+  font-size: 10rem;
 }
 .about .mission .mission__text {
   grid-area: mission__text;
@@ -382,7 +387,8 @@ body {
   grid-template-areas: "selfimage about__text";
 }
 .about .aboutMe .selfimg {
-  max-width: 30%;
+  width: 170px;
+  height: 200px;
   border-radius: 25%;
   grid-area: selfimage;
   margin: auto;
@@ -888,7 +894,7 @@ body {
 /* --MEDIA QUERIES-- */
 @media (max-width: 415px) {
   .product__card {
-    min-width: 85vw;
+    width: 250px;
   }
   .product__card .product__title {
     font-size: 1rem;

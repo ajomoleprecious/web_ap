@@ -836,6 +836,9 @@ body {
 .detail__makeReview form section label {
   margin: 0 0.5rem;
 }
+.detail__makeReview form sup {
+  color: red;
+}
 .detail__related h2 {
   font-size: 2rem;
   font-weight: bolder;
@@ -895,6 +898,9 @@ body {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+}
+.contact__form sup {
+  color: red;
 }
 .contact__map {
   margin: 2rem 5vw;

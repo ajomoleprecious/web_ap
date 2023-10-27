@@ -1835,7 +1835,7 @@ body {
   .header__menu.active,
   .header__menu2.active {
     right: 0;
-    transition: 0.3s;
+    transition: 0.5s all ease-in-out;
   }
   .backToTop {
     position: fixed;
@@ -1914,7 +1914,7 @@ body {
     width: 100vw;
     background-color: lightgrey;
     font-size: 1rem;
-    transition: 0.5s;
+    transition: 0.5s all ease-in-out;
   }
   .header__menu2 {
     display: flex;
@@ -1928,7 +1928,7 @@ body {
     height: 30vh;
     background-color: lightgrey;
     font-size: 1rem;
-    transition: 0.5s;
+    transition: 0.5s all ease-in-out;
   }
   .header__menu2 form {
     display: flex;
@@ -1960,7 +1960,7 @@ body {
   .header__menu.active,
   .header__menu2.active {
     right: 0;
-    transition: 0.3s;
+    transition: 0.5s all ease-in-out;
   }
   .banner {
     grid-template-areas: "banner__img" "banner__text";
@@ -2207,7 +2207,7 @@ body {
     width: 100vw;
     background-color: lightgrey;
     font-size: 1rem;
-    transition: 0.5s;
+    transition: 0.5s all ease-in-out;
   }
   .header__menu2 {
     display: flex;
@@ -2253,7 +2253,7 @@ body {
   .header__menu.active,
   .header__menu2.active {
     right: 0;
-    transition: 0.3s;
+    transition: 0.5s all ease-in-out;
   }
   .backToTop {
     position: fixed;

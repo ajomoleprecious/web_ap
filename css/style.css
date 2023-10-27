@@ -1034,9 +1034,11 @@ body {
     align-items: center;
   }
   .about .location .location__img {
-    max-width: 25%;
-    padding: 0.5rem;
     border-radius: 50px;
+  }
+  .about .location .location__img .fa-shop {
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
   .about .location .location__text {
     align-items: center;
@@ -1056,9 +1058,11 @@ body {
     align-items: center;
   }
   .about .mission .mission__img {
-    max-width: 25%;
-    padding: 0.5rem;
     border-radius: 50px;
+  }
+  .about .mission .mission__img .fa-bullseye {
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
   .about .mission .mission__text {
     justify-content: center;
@@ -1080,8 +1084,8 @@ body {
     align-items: center;
   }
   .about .aboutMe .selfimg {
-    max-width: 25%;
-    padding: 0.5rem;
+    max-width: 60px;
+    max-height: 80px;
     border-radius: 50px;
   }
   .about .aboutMe__text h2 {
@@ -1454,9 +1458,11 @@ body {
     align-items: center;
   }
   .about .location .location__img {
-    max-width: 25%;
-    padding: 0.5rem;
     border-radius: 50px;
+  }
+  .about .location .location__img .fa-shop {
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
   .about .location .location__text {
     align-items: center;
@@ -1476,9 +1482,11 @@ body {
     align-items: center;
   }
   .about .mission .mission__img {
-    max-width: 25%;
-    padding: 0.5rem;
     border-radius: 50px;
+  }
+  .about .mission .mission__img .fa-bullseye {
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
   .about .mission .mission__text {
     justify-content: center;
@@ -1500,8 +1508,8 @@ body {
     align-items: center;
   }
   .about .aboutMe .selfimg {
-    max-width: 25%;
-    padding: 0.5rem;
+    max-width: 60px;
+    max-height: 80px;
     border-radius: 50px;
   }
   .about .aboutMe__text h2 {
@@ -1972,11 +1980,10 @@ body {
     gap: 1rem;
   }
   .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 0.1rem;
+    gap: 0.5rem;
     margin: 1rem 5vw;
   }
   .about .location {
@@ -1984,73 +1991,69 @@ body {
     gap: 0.5rem;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
   .about .location .location__img {
-    width: 100%;
-    height: 100px;
     border-radius: 50px;
   }
+  .about .location .location__img .fa-shop {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
   .about .location .location__text {
-    justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .about .location .location__text h1 {
-    font-size: 1.3rem;
+  .about .location .location__text h2 {
+    font-size: 1.2rem;
   }
   .about .location .location__text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .about .mission {
     margin: 0.5rem auto;
     gap: 0.5rem;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
   .about .mission .mission__img {
-    width: 100%;
-    height: 100px;
     border-radius: 50px;
+  }
+  .about .mission .mission__img .fa-bullseye {
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
   .about .mission .mission__text {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .about .mission .mission__text h1 {
-    font-size: 1.3rem;
+  .about .mission .mission__text h2 {
+    font-size: 1.2rem;
   }
   .about .mission .mission__text p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .about .aboutMe {
     margin: 0.5rem auto;
     gap: 0.5rem;
     display: flex;
-    min-width: fit-content;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .about .aboutMe .selfimg {
-    width: 100px;
-    height: 150px;
-    border-radius: 50%;
+    max-width: 60px;
+    max-height: 80px;
+    border-radius: 50px;
   }
-  .about .aboutMe__text h1 {
-    font-size: 1.3rem;
+  .about .aboutMe__text h2 {
+    font-size: 1.2rem;
   }
-  .about .aboutMe__text > p {
+  .about .aboutMe__text p {
     text-align: justify;
-    font-size: 1rem;
-  }
-  .about .aboutMe__text > p a {
-    font-weight: bold;
+    font-size: 0.8rem;
   }
   .contact h1 {
     font-size: 1.7rem;
@@ -2326,11 +2329,10 @@ body {
     gap: 1rem;
   }
   .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 0.1rem;
+    gap: 0.5rem;
     margin: 1rem 5vw;
   }
   .about .location {
@@ -2338,73 +2340,69 @@ body {
     gap: 0.5rem;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
   .about .location .location__img {
-    width: 100%;
-    height: 100px;
     border-radius: 50px;
   }
+  .about .location .location__img .fa-shop {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
   .about .location .location__text {
-    justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .about .location .location__text h1 {
-    font-size: 1.3rem;
+  .about .location .location__text h2 {
+    font-size: 1.2rem;
   }
   .about .location .location__text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .about .mission {
     margin: 0.5rem auto;
     gap: 0.5rem;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
   .about .mission .mission__img {
-    width: 100%;
-    height: 100px;
     border-radius: 50px;
+  }
+  .about .mission .mission__img .fa-bullseye {
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
   .about .mission .mission__text {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .about .mission .mission__text h1 {
-    font-size: 1.3rem;
+  .about .mission .mission__text h2 {
+    font-size: 1.2rem;
   }
   .about .mission .mission__text p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .about .aboutMe {
     margin: 0.5rem auto;
     gap: 0.5rem;
     display: flex;
-    min-width: fit-content;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .about .aboutMe .selfimg {
-    width: 100px;
-    height: 150px;
-    border-radius: 50%;
+    max-width: 60px;
+    max-height: 80px;
+    border-radius: 50px;
   }
-  .about .aboutMe__text h1 {
-    font-size: 1.3rem;
+  .about .aboutMe__text h2 {
+    font-size: 1.2rem;
   }
-  .about .aboutMe__text > p {
+  .about .aboutMe__text p {
     text-align: justify;
-    font-size: 1rem;
-  }
-  .about .aboutMe__text > p a {
-    font-weight: bold;
+    font-size: 0.8rem;
   }
   .contact h1 {
     font-size: 1.7rem;

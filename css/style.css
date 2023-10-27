@@ -314,7 +314,7 @@ body {
   margin: 2rem 0;
   grid-area: location;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 1rem;
   grid-template-areas: "location__img location__text";
 }
@@ -334,7 +334,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  align-items: end;
+  align-items: center;
 }
 .about .location .location__text h2 {
   font-size: 3rem;
@@ -349,7 +349,7 @@ body {
   margin: 2rem 0;
   grid-area: mission;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-gap: 1rem;
   grid-template-areas: "mission__text mission__img";
 }
@@ -369,7 +369,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  align-items: start;
+  align-items: center;
 }
 .about .mission .mission__text h2 {
   font-size: 3rem;

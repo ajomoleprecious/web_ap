@@ -4,6 +4,7 @@ const hamMenu = document.querySelector("#check");
 const menu1 = document.querySelector(".header__menu");
 const menu2 = document.querySelector(".header__menu2");
 const links = document.querySelectorAll(".menu__item");
+const like = document.querySelector(".fa-solid .fa-heart");
 
 // Function to toggle the "show" class on the "toTop" button
 const toggleToTopButton = () => {
@@ -33,6 +34,12 @@ hamMenu.addEventListener("click", toggleMenu);
 links.forEach((link) => {
   link.addEventListener("click", toggleMenu);
 });
+
+// Toggle the "like" class on the "like" button
+const toggleLike = () => {
+  console.log("clicked");
+  like.classList.toggle("liked");
+};
 
 // Initialize the "toTop" button's visibility
 toggleToTopButton();

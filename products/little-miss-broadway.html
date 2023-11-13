@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Precious Ajomole">
+    <meta name="description" content="Web winkel voor movies">
+    <title>WatchMovies | Product</title>
+    <link rel="shortcut icon" href="../assets/icons/website_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/cd8c9527e1.js" crossorigin="anonymous" defer></script>
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a id="logo" class="header__logo" href="index.html"><img class="logo__img" src="../assets/imgs/logo.webp"
+                alt="logo">Watch<span>Movies</span></a>
+        <nav>
+            <ul class="header__menu">
+                <li class="menu__item"><a href="../index.html">Home</a></li>
+                <li class="menu__item"><a href="../shop.html">Shop</a></li>
+                <li class="menu__item menu__item--active"><a href="#">Product</a></li>
+                <li class="menu__item"><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="header__menu2">
+            <form action="#" method="get">
+                <input class="header__menu2__search" type="text" placeholder="zoek een product" name="search">
+                <input class="header__menu2__searchButton" type="submit" value="Zoek">
+            </form>
+            <a href="#" class="header__menu2__shopping" aria-label="link to shopping cart"><i
+                    class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="header__menu2__wishlist" aria-label="link to whishlist"><i
+                    class="fa-solid fa-heart"></i></a>
+            <a href="#" class="header__menu2__profile" aria-label="link to adjust user settings"><i
+                    class="fa-solid fa-user"></i></a>
+        </section>
+        <section class="ham_menu">
+            <form action="#">
+                <input type="checkbox" id="check" name="toggleMenu">
+                <label for="check" class="checkbtn" aria-label="button to toggle nav menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </form>
+        </section>
+    </header>
+    <main>
+        <section class="detail">
+            <h1>Little Miss Broadway</h1>
+            <section class="detail__score">
+                <section>
+                    <section>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </section>
+                    <p>4 <span>(2 recensies)</span></p>
+                </section>
+                <i class="fa-solid fa-heart liked"></i>
+            </section>
+            <section class="detail__media">
+                <section class="media__trailer">
+                    <iframe src="https://www.youtube.com/embed/CkhPE6Y2v9s" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </section>
+                <section class="media__images">
+                    <figure>
+                        <img src="../assets/imgs/1/1.webp" alt="image1">
+                        <figcaption>Poster van de film</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../assets/imgs/1/2.webp" alt="image2">
+                        <figcaption>...</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../assets/imgs/1/3.webp" alt="image3">
+                        <figcaption>Korte poster van de film</figcaption>
+                    </figure>
+                </section>
+            </section>
+            <section class="detail__description">
+                <section class="detail__description__info">
+                    <h2>Samenvatting</h2>
+                    <p>Een wees wordt voorlopig geadopteerd door de manager van een hotel dat bevolkt wordt door
+                        mensen uit de showbusiness. De hoteleigenaar mag de entertainers niet en wil het meisje
+                        terug naar het weeshuis.
+                        <br> <br>
+                    </p>
+                    <strong>Regisseur:</strong> Irving Cummings
+                    <br> <br> <strong>Acteurs:</strong>
+                    <ul>
+                        <li>Luke Wilson</li>
+                        <li>Dolph Lundgren</li>
+                        <li>Nicky Whelan</li>
+                    </ul>
+                </section>
+                <section class="detail__price">
+                    <p>€ 9,99</p>
+                    <input type="button" class="detail__price__button" value="&hearts; Wenslijst+">
+                    <input type="button" class="detail__price__button" value="Winkelmand+">
+                </section>
+            </section>
+            <section class="detail__reviews">
+                <section>
+                    <p class="user">John Doe</p>
+                    <section>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </section>
+                    <q class="comment">
+                        A classic comedy that still brings joy.
+                    </q>
+                </section>
+                <section>
+                    <p class="user">Jane Smith</p>
+                    <section>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </section>
+                    <q class="comment">
+                        Hilarious and heartwarming. A must-watch!
+                    </q>
+                </section>
+            </section>
+            <section class="detail__makeReview">
+                <h2>Recensie schrijven</h2>
+                <form>
+                    <section>
+                        <input type="range" min="1" max="5" value="2" name="reviewScore">
+                        <p>Score: <span>3</span></p>
+                    </section>
+                    <section>
+                        <label for="review_name">Naam<sup>&#42;</sup></label>
+                        <input type="text" placeholder="Naam" id="review_name" name="user" autocomplete="name" required>
+                        <input type="checkbox" id="unknown" name="unknown?">
+                        <label for="unknown">Anoniem&quest;</label>
+                    </section>
+                    <section>
+                        <label for="review_email">Email<sup>&#42;</sup></label>
+                        <input type="email" placeholder="Email" id="review_email" name="email" autocomplete="email">
+                    </section>
+
+                    <textarea placeholder="Recensie" name="text" required></textarea>
+                    <input type="submit" value="Verstuur">
+                </form>
+            </section>
+            <section class="detail__related">
+                <h2>Gerelateerde films</h2>
+                <section class="related__products">
+                    <article class="product__card">
+                        <a href="product_1.html" class="product__img"><img src="../assets/imgs/1/1.webp"
+                                alt="Little Miss Broadway"></a><abbr class="product__title"
+                            title="Little Miss Broadway">Little Miss Broadway</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn liked"></i>
+                        <p class="product__genre">drama</p>
+                        <p class="product__releaseYear">1938</p>
+                        <p class="product__price">9.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
+                        </section>
+                        <p class="product__sales">5000</p>
+                    </article>
+                    <article class="product__card">
+                        <a href="product.html/?id=2" class="product__img"><img src="../assets/imgs/2/1.webp"
+                                alt="The Small Town (a.k.a. The Town)"></a><abbr class="product__title"
+                            title="The Small Town">The Small Town</abbr><i
+                            class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">drama</p>
+                        <p class="product__releaseYear">1997</p>
+                        <p class="product__price">12.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
+                        </section>
+                        <p class="product__sales">5000</p>
+                    </article>
+                    <article class="product__card">
+                        <a href="product.html/?id=3" class="product__img"><img src="../assets/imgs/3/1.webp"
+                                alt="Hercules"></a>
+                        <abbr class="product__title" title="Hercules">Hercules</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn liked"></i>
+                        <p class="product__genre">animatie</p>
+                        <p class="product__releaseYear">1997</p>
+                        <p class="product__price">14.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
+                        </section>
+                        <p class="product__sales">10000</p>
+                    </article>
+                    <article class="product__card">
+                        <a href="product.html/?id=4" class="product__img"><img src="../assets/imgs/4/1.webp"
+                                alt="The Child (L'enfant)"></a><abbr class="product__title"
+                            title="The Child (L'enfant)">The
+                            Child (L'enfant)</abbr>
+                        <i class="fa-solid fa-heart product_wishlistBtn"></i>
+                        <p class="product__genre">misdaad</p>
+                        <p class="product__releaseYear">2005</p>
+                        <p class="product__price">19.99</p>
+                        <section id="product__score">
+                            <section>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
+                        </section>
+                        <p class="product__sales">1000</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <a href="#" aria-label="link to scroll to the top" class="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+    </main>
+    <footer class="footer">
+        <a class="footer__logo" href="index.html"><img class="logo__img" src="../assets/imgs/logo.webp" alt="logo"></a>
+        <nav>
+            <ul class="footer__menu">
+                <li class="menu__item"><a href="../index.html">Home</a></li>
+                <li class="menu__item"><a href="../shop.html">Shop</a></li>
+                <li class="menu__item menu__item--active"><a href="#">Product</a></li>
+                <li class="menu__item"><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <section>
+                <a class="socials__link" target="_blank" aria-label="link to ap facebook"
+                    href="https://www.facebook.com/APHogeschool/"><i class="fa-brands fa-facebook"></i></a>
+                <a class="socials__link" target="_parent" aria-label="link to ap instagram"
+                    href="https://www.instagram.com/aphogeschool/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="socials__link" target="_blank" aria-label="link to ap twitter"
+                    href="https://twitter.com/AP_Hogeschool"><i class="fa-brands fa-twitter"></i></a>
+            </section>
+            <p>&copy;2023&mdash;WatchMovies</p><br>
+        </section>
+    </footer>
+</body>
+
+</html>

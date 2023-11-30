@@ -91,6 +91,59 @@ body {
   color: var(--secondary-color);
 }
 
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: 2rem 5vw;
+  gap: 2rem;
+}
+.about .location, .about .mission {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  max-width: 500px;
+}
+.about .location__text, .about .mission__text {
+  text-align: center;
+}
+.about .location__text .email, .about .mission__text .email {
+  color: var(--primary-color);
+}
+.about .location__img, .about .mission__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--quaternary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.about .location__img .fa-shop, .about .location__img .fa-bullseye, .about .mission__img .fa-shop, .about .mission__img .fa-bullseye {
+  font-size: 2rem;
+}
+.about .aboutMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+}
+.about .aboutMe .selfimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--quaternary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.about .aboutMe .selfimg .fa-user {
+  font-size: 2rem;
+}
+
 .backToTop {
   position: fixed;
   bottom: 20px;
@@ -308,113 +361,6 @@ body {
   gap: 10rem;
   justify-content: center;
   align-content: center;
-}
-
-.about {
-  margin: 2rem 5vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4rem;
-  grid-template-areas: "location mission" "aboutMe aboutMe";
-}
-.about .location {
-  margin: 2rem 0;
-  grid-area: location;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 1rem;
-  grid-template-areas: "location__img location__text";
-}
-.about .location .location__img {
-  grid-area: location__img;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--quaternary-color);
-  border-radius: 50px 0 0 50px;
-}
-.about .location .location__img .fa-shop {
-  font-size: 10rem;
-}
-.about .location .location__text {
-  grid-area: location__text;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-}
-.about .location .location__text h2 {
-  font-size: 3rem;
-  font-weight: bolder;
-  margin-bottom: 1rem;
-}
-.about .location .location__text p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.about .mission {
-  margin: 2rem 0;
-  grid-area: mission;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 1rem;
-  grid-template-areas: "mission__text mission__img";
-}
-.about .mission .mission__img {
-  grid-area: mission__img;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--quaternary-color);
-  border-radius: 0 50px 50px 0;
-}
-.about .mission .mission__img .fa-bullseye {
-  font-size: 10rem;
-}
-.about .mission .mission__text {
-  grid-area: mission__text;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-}
-.about .mission .mission__text h2 {
-  font-size: 3rem;
-  font-weight: bolder;
-  margin-bottom: 1rem;
-}
-.about .mission .mission__text p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.about .aboutMe {
-  grid-area: aboutMe;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "selfimage about__text";
-}
-.about .aboutMe .selfimg {
-  width: 170px;
-  height: 200px;
-  border-radius: 25%;
-  grid-area: selfimage;
-  margin: auto;
-}
-.about .aboutMe__text {
-  grid-area: about__text;
-  display: flex;
-  flex-direction: column;
-}
-.about .aboutMe__text h2 {
-  margin: 1.2rem;
-  font-size: 3rem;
-  text-align: center;
-  font-weight: bolder;
-}
-.about .aboutMe__text > p {
-  text-align: justify;
-  font-size: 1.2rem;
-  font-style: italic;
 }
 
 /* --SHOP-- */
@@ -1053,82 +999,6 @@ body {
     margin: 1rem auto;
     gap: 1rem;
   }
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem 5vw;
-  }
-  .about .location {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .location .location__img {
-    border-radius: 50px;
-  }
-  .about .location .location__img .fa-shop {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .location .location__text {
-    align-items: center;
-    text-align: center;
-  }
-  .about .location .location__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .location .location__text p {
-    font-size: 0.8rem;
-  }
-  .about .mission {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .mission .mission__img {
-    border-radius: 50px;
-  }
-  .about .mission .mission__img .fa-bullseye {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .mission .mission__text {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .about .mission .mission__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .mission .mission__text p {
-    text-align: justify;
-    font-size: 0.8rem;
-  }
-  .about .aboutMe {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about .aboutMe .selfimg {
-    max-width: 60px;
-    max-height: 80px;
-    border-radius: 50px;
-  }
-  .about .aboutMe__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .aboutMe__text p {
-    text-align: justify;
-    font-size: 0.8rem;
-  }
   .backToTop {
     position: fixed;
     bottom: 10px;
@@ -1480,82 +1350,6 @@ body {
     padding: 0;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-  }
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem 5vw;
-  }
-  .about .location {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .location .location__img {
-    border-radius: 50px;
-  }
-  .about .location .location__img .fa-shop {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .location .location__text {
-    align-items: center;
-    text-align: center;
-  }
-  .about .location .location__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .location .location__text p {
-    font-size: 0.8rem;
-  }
-  .about .mission {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .mission .mission__img {
-    border-radius: 50px;
-  }
-  .about .mission .mission__img .fa-bullseye {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .mission .mission__text {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .about .mission .mission__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .mission .mission__text p {
-    text-align: justify;
-    font-size: 0.8rem;
-  }
-  .about .aboutMe {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about .aboutMe .selfimg {
-    max-width: 60px;
-    max-height: 80px;
-    border-radius: 50px;
-  }
-  .about .aboutMe__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .aboutMe__text p {
-    text-align: justify;
-    font-size: 0.8rem;
   }
   .backToTop {
     position: fixed;
@@ -2021,82 +1815,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
-  .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem 5vw;
-  }
-  .about .location {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .location .location__img {
-    border-radius: 50px;
-  }
-  .about .location .location__img .fa-shop {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .location .location__text {
-    align-items: center;
-    text-align: center;
-  }
-  .about .location .location__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .location .location__text p {
-    font-size: 0.8rem;
-  }
-  .about .mission {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .mission .mission__img {
-    border-radius: 50px;
-  }
-  .about .mission .mission__img .fa-bullseye {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .mission .mission__text {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .about .mission .mission__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .mission .mission__text p {
-    text-align: justify;
-    font-size: 0.8rem;
-  }
-  .about .aboutMe {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about .aboutMe .selfimg {
-    max-width: 60px;
-    max-height: 80px;
-    border-radius: 50px;
-  }
-  .about .aboutMe__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .aboutMe__text p {
-    text-align: justify;
-    font-size: 0.8rem;
-  }
   .contact h1 {
     font-size: 1.7rem;
   }
@@ -2373,82 +2091,6 @@ body {
     padding: 0;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-  }
-  .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem 5vw;
-  }
-  .about .location {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .location .location__img {
-    border-radius: 50px;
-  }
-  .about .location .location__img .fa-shop {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .location .location__text {
-    align-items: center;
-    text-align: center;
-  }
-  .about .location .location__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .location .location__text p {
-    font-size: 0.8rem;
-  }
-  .about .mission {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .mission .mission__img {
-    border-radius: 50px;
-  }
-  .about .mission .mission__img .fa-bullseye {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .about .mission .mission__text {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .about .mission .mission__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .mission .mission__text p {
-    text-align: justify;
-    font-size: 0.8rem;
-  }
-  .about .aboutMe {
-    margin: 0.5rem auto;
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about .aboutMe .selfimg {
-    max-width: 60px;
-    max-height: 80px;
-    border-radius: 50px;
-  }
-  .about .aboutMe__text h2 {
-    font-size: 1.2rem;
-  }
-  .about .aboutMe__text p {
-    text-align: justify;
-    font-size: 0.8rem;
   }
   .contact h1 {
     font-size: 1.7rem;

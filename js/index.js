@@ -4,6 +4,13 @@ const hamMenu = document.querySelector("#check");
 const menu1 = document.querySelector(".header__menu");
 const menu2 = document.querySelector(".header__menu2");
 const links = document.querySelectorAll(".menu__item");
+let likeBtn = document.querySelectorAll(".fa-solid.fa-heart.product_wishlistBtn");
+
+likeBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("liked");
+  });
+});
 
 // Function to toggle the "show" class on the "toTop" button
 const toggleToTopButton = () => {

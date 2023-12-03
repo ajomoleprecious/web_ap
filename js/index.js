@@ -29,9 +29,9 @@ const toggleToTopButton = () => {
 };
 
 toTop.addEventListener("click", () => {
+  document.documentElement.style.scrollBehavior = "smooth";
   window.scrollTo({
-    top: 0,
-    behavior: "auto",
+    top: 0
   });
 });
 
@@ -50,7 +50,7 @@ function enableScroll() {
 }
 
 // Function to toggle the "active" class on the menu elements
-const toggleMenu = () => {
+function toggleMenu()  {
   menu1.classList.toggle("active");
   menu2.classList.toggle("active");
   if (menu1.classList.contains("active")) {
@@ -59,6 +59,19 @@ const toggleMenu = () => {
     enableScroll();
   }
 };
+
+
+// Enable scrolling when the menu is closed
+document.querySelector("main").addEventListener("click", () => {
+  if (menu1.classList.contains("active") && menu2.classList.contains("active")) {
+    toggleMenu();
+  }
+});
+document.querySelector("footer").addEventListener("click", () => {
+  if (menu1.classList.contains("active") && menu2.classList.contains("active")) {
+    toggleMenu();
+  }
+});
 
 // Event listeners
 window.addEventListener("scroll", toggleToTopButton);

@@ -23,6 +23,7 @@ body {
   align-items: center;
   background-color: white;
   position: sticky;
+  z-index: 1;
 }
 .header__logo {
   display: flex;
@@ -583,14 +584,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--quaternary-color);
+  background-color: rebeccapurple;
+  color: #fff;
   border-radius: 15px;
-  max-width: 320px;
+  max-width: 340px;
   padding: 1rem 0.5rem 6rem 0.5rem;
   margin: auto;
+  position: fixed;
+  right: -100%;
+  top: 50px;
+  transition: 0.5s all ease-in-out;
 }
 .cart-summary .summaryclose {
-  background-color: var(--primary-color);
+  background-color: var(--quaternary-color);
+  text-align: center;
+  margin: auto 0 auto auto;
   padding: 0.2rem;
   border-radius: 10px;
   color: #fff;
@@ -600,31 +608,36 @@ body {
   font-size: 1rem;
   font-weight: bold;
   margin: 1rem auto;
+  text-transform: uppercase;
+}
+.cart-summary div {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  max-height: 100%;
 }
 .cart-summary section {
   display: grid;
-  grid-template-areas: "title amount price delete";
-  grid-template-columns: auto 6% 20% 5%;
+  grid-template-areas: "title amount price delete" "title amount . .";
+  grid-template-columns: auto 10% 30% 10%;
   color: #fff;
-  background-color: var(--primary-color);
-  border-bottom: 1px solid var(--tertiary-color);
-  border-top: 1px solid var(--tertiary-color);
-  padding: 1.5rem;
-  margin: 0.1rem 1vw;
-  min-width: 100%;
-  min-height: max-content;
+  background-color: var(--quaternary-color);
+  padding: 1rem;
+  margin: 0.1rem auto;
+  width: 100%;
+  max-height: 100%;
   gap: 0.3rem;
   border-radius: 15px;
 }
 .cart-summary section .movietitle {
   grid-area: title;
-  white-space: nowrap;
   overflow: scroll;
 }
 .cart-summary section .amount {
   grid-area: amount;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .cart-summary section .price {
   grid-area: price;
@@ -632,7 +645,12 @@ body {
 .cart-summary section .deleteproduct {
   grid-area: delete;
   cursor: pointer;
+  text-align: center;
+  align-items: center;
   color: red;
+  padding: 0.2rem;
+  border-radius: 10px;
+  background-color: var(--quaternary-color);
   font-weight: bold;
 }
 .cart-summary tbody tr {
@@ -650,6 +668,11 @@ body {
 }
 .cart-summary .summarybuttons button {
   cursor: pointer;
+}
+
+.cart-summary.show {
+  right: 0;
+  transition: 0.5s all ease-in-out;
 }
 
 /* --PRODUCT-- */
@@ -1504,10 +1527,6 @@ body {
   .contact__form__submit {
     width: 100%;
     font-size: 0.8rem;
-  }
-  .contact__map iframe {
-    width: 100%;
-    height: 300px;
   }
   /* --SHOP-- */
   .filters {

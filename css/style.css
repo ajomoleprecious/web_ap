@@ -587,7 +587,7 @@ body {
   background-color: rebeccapurple;
   color: #fff;
   border-radius: 15px;
-  min-width: 400px;
+  min-width: 380px;
   padding: 1rem 0.5rem 6rem 0.5rem;
   margin: auto;
   position: fixed;
@@ -618,8 +618,10 @@ body {
 }
 .cart-summary section {
   display: grid;
-  grid-template-areas: "title amount price delete" "title amount . .";
+  grid-template-areas: "title amount price delete";
   grid-template-columns: auto 10% 30% 10%;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   background-color: var(--quaternary-color);
   padding: 1rem;

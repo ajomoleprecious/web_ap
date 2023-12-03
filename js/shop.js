@@ -64,38 +64,17 @@ function displayCartItems() {
   let cartList = document.querySelector(".cartList");
   cartList.innerHTML = "";
   cartItems.forEach((item) => {
-    let section = document.createElement('section');
-
-    let movieTitle = document.createElement('p');
-    movieTitle.className = 'movietitle';
-    movieTitle.textContent = item.name;
-    section.appendChild(movieTitle);
-
-    let amountDiv = document.createElement('div');
-    amountDiv.className = 'amount';
-
-    let timesP = document.createElement('p');
-    timesP.textContent = '×';
-    amountDiv.appendChild(timesP);
-
-    let amountNumber = document.createElement('p');
-    amountNumber.className = 'amountNumber';
-    amountNumber.textContent = item.quantity;
-    amountDiv.appendChild(amountNumber);
-
-    section.appendChild(amountDiv);
-
-    let price = document.createElement('p');
-    price.className = 'price';
-    price.textContent = `€ ${item.price}`;
-    section.appendChild(price);
-
-    let deleteProduct = document.createElement('i');
-    deleteProduct.className = 'fa-solid fa-xmark deleteproduct';
-    deleteProduct.setAttribute('onclick', `removeProduct('${item.name}')`);
-    section.appendChild(deleteProduct);
-
-    cartList.appendChild(section);
+    cartList.innerHTML += `
+            <section>
+              <p class="movietitle">${item.name}</p>
+              <div class="amount">
+                <p>&times;</p>
+                <p class="amountNumber">${item.quantity}</p>
+              </div>
+                <p class="price">€ ${item.price}</p>
+                <i class="fa-solid fa-xmark deleteproduct" onclick="removeProduct('${item.name}')"></i>
+            </section>
+            `;
 
     subtotaal.innerHTML = `€ ${calculateSubTotal()}`;
     btw.innerHTML = `€ ${calculateBtw()}`;

@@ -14,5 +14,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="/index.html">WatchMovies</a>'
 }).addTo(map);
-L.marker(coord, {icon: icon}).addTo(map).bindPopup('WatchMovies').openPopup();
+L.marker(coord, {icon: icon}).addTo(map).bindPopup('<div style="text-align: center;">WatchMovies<br/><a href="https://maps.app.goo.gl/9xC3ckFfLVRvSXRV9" target="_blank">Route naar</a></div>').openPopup();
 

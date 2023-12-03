@@ -4,13 +4,24 @@ const hamMenu = document.querySelector("#check");
 const menu1 = document.querySelector(".header__menu");
 const menu2 = document.querySelector(".header__menu2");
 const links = document.querySelectorAll(".menu__item");
-let likeBtn = document.querySelectorAll(".fa-solid.fa-heart.product_wishlistBtn");
+let likeBtn = document.querySelectorAll(".fa-solid.fa-heart");
+const lightBtn = document.querySelector(".header__menu2__light");
 
 likeBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("liked");
   });
 });
+
+lightBtn.addEventListener("click", () => {
+  lightBtn.classList.toggle("light");
+  if (lightBtn.classList.contains("light")) {
+    lightBtn.innerHTML = `<i class="fas fa-moon"></i>`;
+  } else {
+    lightBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+  }
+});
+
 
 // Function to toggle the "show" class on the "toTop" button
 const toggleToTopButton = () => {
@@ -26,10 +37,27 @@ toTop.addEventListener("click", () => {
 
 window.addEventListener("scroll", toggleToTopButton);
 
+// Function to disable scrolling
+function disableScroll() {
+  document.body.style.overflow = "hidden";
+  document.querySelector("body").style.height = "100%";
+}
+
+// Function to enable scrolling
+function enableScroll() {
+  document.body.style.overflow = null;
+  document.querySelector("body").style.height = null;
+}
+
 // Function to toggle the "active" class on the menu elements
 const toggleMenu = () => {
   menu1.classList.toggle("active");
   menu2.classList.toggle("active");
+  if (menu1.classList.contains("active")) {
+    disableScroll();
+  } else {
+    enableScroll();
+  }
 };
 
 // Event listeners

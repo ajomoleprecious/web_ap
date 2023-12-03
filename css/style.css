@@ -21,6 +21,8 @@ body {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  position: sticky;
 }
 .header__logo {
   display: flex;
@@ -265,8 +267,8 @@ body {
   height: 300px;
   cursor: pointer;
   display: grid;
-  grid-template-areas: "img img" "title wishlistBtn" "genre ." "year ." "price ." "score score";
-  grid-template-columns: 90% auto;
+  grid-template-areas: "img img" "title wishlistBtn" "genre ." "year shopping" "price ." "score score";
+  grid-template-columns: 85% auto;
   grid-template-rows: 60% auto;
 }
 .product__card .product__img {
@@ -311,6 +313,13 @@ body {
   margin: auto auto auto 0.5rem;
   padding: 0.3rem;
   color: #000;
+}
+.product__card .product__shopping {
+  grid-area: shopping;
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  cursor: pointer;
 }
 .product__card .product__price {
   grid-area: price;
@@ -570,6 +579,79 @@ body {
   align-items: center;
 }
 
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--quaternary-color);
+  border-radius: 15px;
+  max-width: 320px;
+  padding: 1rem 0.5rem 6rem 0.5rem;
+  margin: auto;
+}
+.cart-summary .summaryclose {
+  background-color: var(--primary-color);
+  padding: 0.2rem;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.cart-summary h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem auto;
+}
+.cart-summary section {
+  display: grid;
+  grid-template-areas: "title amount price delete";
+  grid-template-columns: auto 6% 20% 5%;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--tertiary-color);
+  border-top: 1px solid var(--tertiary-color);
+  padding: 1.5rem;
+  margin: 0.1rem 1vw;
+  min-width: 100%;
+  min-height: max-content;
+  gap: 0.3rem;
+  border-radius: 15px;
+}
+.cart-summary section .movietitle {
+  grid-area: title;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.cart-summary section .amount {
+  grid-area: amount;
+  display: flex;
+  flex-direction: column;
+}
+.cart-summary section .price {
+  grid-area: price;
+}
+.cart-summary section .deleteproduct {
+  grid-area: delete;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+.cart-summary tbody tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  gap: 5rem;
+}
+.cart-summary .summarybuttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cart-summary .summarybuttons button {
+  cursor: pointer;
+}
+
 /* --PRODUCT-- */
 .detail {
   margin: 2rem 5vw;
@@ -599,6 +681,9 @@ body {
   cursor: pointer;
 }
 .detail__score .fa-heart:hover {
+  color: var(--secondary-color);
+}
+.detail__score .fa-heart.liked {
   color: var(--secondary-color);
 }
 .detail__media {
@@ -907,7 +992,7 @@ body {
     top: 50px;
     right: -105%;
     min-width: 100vw;
-    background-color: lightgrey;
+    background-color: var(--tertiary-color);
     font-size: 1rem;
     transition: 0.5s all ease-in-out;
   }
@@ -920,7 +1005,7 @@ body {
     right: -105%;
     min-width: 100vw;
     min-height: auto;
-    background-color: lightgrey;
+    background-color: var(--tertiary-color);
     font-size: 2rem;
     transition: 0.5s all ease-in-out;
     border-radius: 0 0 10px 30px;
@@ -999,6 +1084,11 @@ body {
     align-items: center;
     margin: 1rem auto;
     gap: 1rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .backToTop {
     position: fixed;
@@ -1351,6 +1441,11 @@ body {
     padding: 0;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .backToTop {
     position: fixed;

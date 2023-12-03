@@ -587,7 +587,7 @@ body {
   background-color: rebeccapurple;
   color: #fff;
   border-radius: 15px;
-  max-width: 500px;
+  width: 500px;
   padding: 1rem 0.5rem 6rem 0.5rem;
   margin: auto;
   position: fixed;

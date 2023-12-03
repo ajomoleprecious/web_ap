@@ -116,3 +116,5 @@ function removeProduct(productName) {
   }
   displayCartItems();
 }
+
+displayCartItems();

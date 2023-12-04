@@ -3,7 +3,7 @@ const filters = document.querySelector(".shop__aside");
 const filterClose = document.querySelector(".filterClose");
 const shoppingBtn = document.querySelector(".header__menu2__shopping");
 const shoppingCart = document.querySelector(".cart-summary");
-let cartcloseBtn = document.querySelector(".summaryclose");
+const cartcloseBtn = document.querySelector(".summaryclose");
 let addToCartBtn = document.querySelectorAll(".product__shopping");
 let subtotaal = document.querySelector(".subtotaal");
 let btw = document.querySelector(".btw");
@@ -24,17 +24,6 @@ shoppingBtn.addEventListener("click", () => {
   shoppingCart.classList.toggle("show");
   toggleMenu();
 });
-
-// Function to toggle the "active" class on the menu elements
-function toggleMenu() {
-  menu1.classList.toggle("active");
-  menu2.classList.toggle("active");
-  if (menu1.classList.contains("active")) {
-    disableScroll();
-  } else {
-    enableScroll();
-  }
-}
 
 const toggleFilterMenu = () => {
   filters.classList.toggle("active");
@@ -58,6 +47,10 @@ function addToCart(productName, productPrice) {
   }
 
   displayCartItems();
+  // wait 5 seconds and then remove the class
+  setTimeout(() => {
+    shoppingCart.classList.remove("show");
+  }, 5000);
 }
 
 function displayCartItems() {

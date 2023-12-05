@@ -155,6 +155,9 @@ body {
 .about .aboutMe .selfimg .fa-user {
   font-size: 2rem;
 }
+.about .aboutMe u {
+  text-decoration: underline;
+}
 
 .backToTop {
   position: fixed;
@@ -607,7 +610,7 @@ body {
 .cart-summary .summaryclose {
   background-color: var(--quaternary-color);
   text-align: center;
-  margin: auto 0 auto auto;
+  margin: auto 20px auto auto;
   padding: 0.2rem;
   border-radius: 10px;
   color: #fff;

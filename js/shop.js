@@ -9,7 +9,6 @@ let subtotaal = document.querySelector(".subtotaal");
 let btw = document.querySelector(".btw");
 let totaal = document.querySelector(".totaal");
 
-
 addToCartBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     shoppingCart.classList.add("show");
@@ -20,10 +19,12 @@ cartcloseBtn.addEventListener("click", () => {
   shoppingCart.classList.toggle("show");
 });
 
-shoppingBtn.addEventListener("click", () => {
-  shoppingCart.classList.toggle("show");
-  toggleMenu();
-});
+function showCart() {
+  shoppingBtn.addEventListener("click", () => {
+    shoppingCart.classList.toggle("show");
+    toggleMenu();
+  });
+}
 
 const toggleFilterMenu = () => {
   filters.classList.toggle("active");
@@ -35,7 +36,7 @@ filterClose.addEventListener("click", () => {
 });
 
 // Store the cart items in local storage
-let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
 function addToCart(productName, productPrice) {
   let existingCartItem = cartItems.find((item) => item.name === productName);
@@ -49,7 +50,7 @@ function addToCart(productName, productPrice) {
     });
   }
 
-  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
   displayCartItems();
   // wait 5 seconds and then remove the class
@@ -116,3 +117,4 @@ function removeProduct(productName) {
 }
 
 displayCartItems();
+showCart();

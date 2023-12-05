@@ -45,14 +45,16 @@ body {
   margin: 0 1rem;
   font-size: 1.5rem;
   padding: 1rem 0 0.2rem 0;
+}
+.header__menu .menu__item a {
   cursor: pointer;
+}
+.header__menu .menu__item a:hover {
+  color: var(--secondary-color);
 }
 .header__menu .menu__item--active {
   color: var(--primary-color);
   border-bottom: 5px solid var(--primary-color);
-}
-.header__menu .menu__item:hover {
-  color: var(--secondary-color);
 }
 .header__menu2 {
   display: inline-flex;
@@ -101,19 +103,23 @@ body {
   margin: 2rem 5vw;
   gap: 2rem;
 }
-.about .location, .about .mission {
+.about .location,
+.about .mission {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   max-width: 500px;
 }
-.about .location__text, .about .mission__text {
+.about .location__text,
+.about .mission__text {
   text-align: center;
 }
-.about .location__text .email, .about .mission__text .email {
+.about .location__text .email,
+.about .mission__text .email {
   color: var(--primary-color);
 }
-.about .location__img, .about .mission__img {
+.about .location__img,
+.about .mission__img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -123,7 +129,10 @@ body {
   align-items: center;
   margin-bottom: 1rem;
 }
-.about .location__img .fa-shop, .about .location__img .fa-bullseye, .about .mission__img .fa-shop, .about .mission__img .fa-bullseye {
+.about .location__img .fa-shop,
+.about .location__img .fa-bullseye,
+.about .mission__img .fa-shop,
+.about .mission__img .fa-bullseye {
   font-size: 2rem;
 }
 .about .aboutMe {

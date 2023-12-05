@@ -78,12 +78,14 @@ function enableScroll() {
 
 // Function to toggle the "active" class on the menu elements
 function toggleMenu()  {
-  menu1.classList.toggle("active");
-  menu2.classList.toggle("active");
-  if (menu1.classList.contains("active")) {
-    disableScroll();
-  } else {
-    enableScroll();
+  if (window.innerWidth <= 1200) {
+    menu1.classList.toggle("active");
+    menu2.classList.toggle("active");
+    if (menu1.classList.contains("active")) {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
   }
 };
 

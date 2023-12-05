@@ -14,22 +14,20 @@ likeBtn.forEach((btn) => {
 });
 
 lightBtn.addEventListener("click", () => {
-  lightBtn.classList.toggle("light");
-  if (lightBtn.classList.contains("light")) {
-    lightBtn.innerHTML = `<i class="fas fa-moon"></i>`;
-    //lightMode();
+  if (document.body.classList.contains("light")) {
+    darkMode();
   } else {
-    lightBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`;
-    //darkMode();
+    lightMode();
   }
 });
 
 // Function to change the website to light mode
 
-/*function lightMode() {
+function lightMode() {
   document.body.classList.add("light");
   document.body.classList.remove("dark");
   localStorage.setItem("theme", "light");
+  lightBtn.innerHTML = `<i class="fas fa-moon"></i>`; 
 }
 
 // Function to change the website to dark mode
@@ -38,17 +36,18 @@ function darkMode() {
   document.body.classList.add("dark");
   document.body.classList.remove("light");
   localStorage.setItem("theme", "dark");
+  lightBtn.innerHTML = `<i class="fas fa-sun"></i>`;  
 }
 
 // Function to check the current theme
 
 function checkTheme() {
-  if (localStorage.getItem("theme") === "light") {
+  if (localStorage.getItem("theme") == "light") {
     lightMode();
   } else {
     darkMode();
   }
-}*/
+}
 
 // Function to toggle the "show" class on the "toTop" button
 const toggleToTopButton = () => {
@@ -113,4 +112,4 @@ links.forEach((link) => {
 
 // Initialize the "toTop" button's visibility
 toggleToTopButton();
-//checkTheme();
+checkTheme();

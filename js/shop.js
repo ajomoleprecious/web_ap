@@ -8,7 +8,7 @@ let addToCartBtn = document.querySelectorAll(".product__shopping");
 let subtotaal = document.querySelector(".subtotaal");
 let btw = document.querySelector(".btw");
 let totaal = document.querySelector(".totaal");
-let cartItems = [];
+
 
 addToCartBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -34,6 +34,9 @@ filterClose.addEventListener("click", () => {
   filters.classList.remove("active");
 });
 
+// Store the cart items in local storage
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
 function addToCart(productName, productPrice) {
   let existingCartItem = cartItems.find((item) => item.name === productName);
   if (existingCartItem) {
@@ -45,6 +48,8 @@ function addToCart(productName, productPrice) {
       quantity: 1,
     });
   }
+
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
   displayCartItems();
   // wait 5 seconds and then remove the class

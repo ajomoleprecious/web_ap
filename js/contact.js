@@ -1,11 +1,11 @@
 
-const coord = [51.230230, 4.414230];
+const coord = [51.230200, 4.414150];
 var icon = L.icon({
-    iconUrl: 'assets/icons/icon-ap.png',
+    iconUrl: 'assets/imgs/logo.webp',
 
     iconSize:     [60, 40], // size of the icon
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    iconAnchor:   [22, 80], // point of the icon which will correspond to marker's location
+    popupAnchor:  [5, -80] // point from which the popup should open relative to the iconAnchor
 });
 
 var map = L.map('map').setView(coord, 17);

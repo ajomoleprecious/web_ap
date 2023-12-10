@@ -6,6 +6,7 @@ const menu2 = document.querySelector(".header__menu2");
 const links = document.querySelectorAll(".menu__item");
 let likeBtn = document.querySelectorAll(".fa-solid.fa-heart");
 const lightBtn = document.querySelector(".header__menu2__light");
+const header = document.querySelector("header");
 
 likeBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -52,6 +53,7 @@ function checkTheme() {
 // Function to toggle the "show" class on the "toTop" button
 const toggleToTopButton = () => {
   toTop.classList.toggle("show", window.scrollY > 120);
+  header.style.boxShadow = window.scrollY > 120 ? "0 0 30px 0 var(--primary-color)" : "none";
 };
 
 toTop.addEventListener("click", () => {

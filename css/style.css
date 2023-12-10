@@ -740,7 +740,7 @@ body {
   grid-area: images;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
   align-items: start;
   flex-wrap: wrap;
   text-align: center;

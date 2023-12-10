@@ -36,7 +36,7 @@ filterClose.addEventListener("click", () => {
 });
 
 // Store the cart items in local storage
-let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
 function addToCart(productName, productPrice) {
   let existingCartItem = cartItems.find((item) => item.name === productName);
@@ -85,6 +85,7 @@ function displayCartItems() {
     subtotaal.innerHTML = `€ 0.00`;
     btw.innerHTML = `€ 0.00`;
     totaal.innerHTML = `€ 0.00`;
+    localStorage.removeItem("cartItems");
   }
 }
 
@@ -113,6 +114,7 @@ function removeProduct(productName) {
   } else {
     existingCartItem.quantity--;
   }
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
   displayCartItems();
 }
 

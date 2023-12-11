@@ -419,9 +419,10 @@ body {
   align-items: center;
   border: 1px solid var(--tertiary-color);
   border-radius: 10px;
-  padding: 1.5rem 1rem 8rem 1rem;
+  padding: 1.5rem 1.5rem 8rem 0.5rem;
   background-color: var(--quaternary-color);
   text-align: center;
+  width: 240px;
 }
 .shop__aside h2 {
   font-size: 1.5rem;
@@ -478,10 +479,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem 0;
-}
-.shop__aside__price section input[type=range] {
-  margin: 0 0.5rem;
+  margin: 0.5rem 1rem;
+  gap: 0.2rem;
 }
 .shop__aside__price section input[type=range]::-webkit-slider-runnable-track {
   width: 300px;
@@ -513,13 +512,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem 0;
-}
-.shop__aside__length section input[type=range] {
-  margin: 0 0.5rem;
+  margin: 0.5rem 1rem;
+  gap: 0.2rem;
 }
 .shop__aside__length section input[type=range]::-webkit-slider-runnable-track {
-  width: 300px;
+  width: 280px;
   height: 5px;
   background: var(--tertiary-color);
   border: none;
@@ -746,8 +743,8 @@ body {
   text-align: center;
 }
 .detail__media .media__images img {
-  width: 200px;
-  height: 150px;
+  width: 180px;
+  height: 130px;
   border-radius: 10px;
   margin: 0.5rem;
 }
@@ -824,9 +821,13 @@ body {
   border: none;
   background-color: transparent;
   padding: 0;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
+  width: 290px;
 }
-.detail__reviews section section .checked {
+.detail__reviews section section span {
+  margin-right: 0.2rem;
+}
+.detail__reviews section section span.checked {
   color: #f8c844;
 }
 .detail__reviews section q {
@@ -872,7 +873,7 @@ body {
 .detail__makeReview form input[type=submit] {
   border: 1px solid var(--tertiary-color);
   border-radius: 10px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   margin: 0.5rem auto;
   width: 50%;
   font-size: 1.2rem;
@@ -880,6 +881,7 @@ body {
   background-color: var(--primary-color);
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
 }
 .detail__makeReview form input[type=checkbox] {
@@ -898,6 +900,10 @@ body {
   border-radius: 10px;
   padding: 0.2rem 1rem;
   font-size: 1rem;
+}
+.detail__makeReview form input[type=text].disabled,
+.detail__makeReview form input[type=email].disabled {
+  background-color: var(--quaternary-color);
 }
 .detail__makeReview form section {
   display: flex;

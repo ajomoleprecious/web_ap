@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/cd8c9527e1.js" crossorigin="anonymous" defer></script>
     <script src="../../js/index.js" defer></script>
+    <script src="../../js/product.js" defer></script>
 </head>
 
 <body>
@@ -135,23 +136,23 @@
             </section>
             <section class="detail__makeReview">
                 <h2>Recensie schrijven</h2>
-                <form>
+                <form id="review_form">
                     <section>
-                        <input type="range" min="0" max="5" value="2" name="reviewScore">
-                        <p>Score: <span>3</span></p>
+                        <input type="range" min="0" max="5" value="2" id="review_score" name="reviewScore">
+                        <p>Score: <span id="label_score">3</span></p>
                     </section>
                     <section>
                         <label for="review_name">Naam<sup>&#42;</sup></label>
-                        <input type="text" placeholder="Naam" id="review_name" name="user" autocomplete="name" required>
-                        <input type="checkbox" id="unknown" name="unknown?">
+                        <input type="text" placeholder="Naam" id="review_name" name="name" autocomplete="name" required>
+                        <input type="checkbox" id="unknown">
                         <label for="unknown">Anoniem&quest;</label>
                     </section>
                     <section>
                         <label for="review_email">Email<sup>&#42;</sup></label>
                         <input type="email" placeholder="Email" id="review_email" name="email" autocomplete="email">
                     </section>
-                    <textarea placeholder="Recensie" name="text" required></textarea>
-                    <input type="submit" value="Verstuur">
+                    <textarea placeholder="Recensie" name="text" id="review_text" required></textarea>
+                    <input type="submit" onclick="addReview()" value="Voeg toe!">
                 </form>
             </section>
             <section class="detail__related">

@@ -8,6 +8,19 @@ let addToCartBtn = document.querySelectorAll(".product__shopping");
 let subtotaal = document.querySelector(".subtotaal");
 let btw = document.querySelector(".btw");
 let totaal = document.querySelector(".totaal");
+const filterPrice = document.getElementById("filterPrice");
+const label_filterPrice = document.getElementById("label_filterPrice");
+const filterLength = document.getElementById("filterLength");
+const label_filterLength = document.getElementById("label_filterLength");
+
+filterLength.addEventListener("change", () => {
+  label_filterLength.innerHTML = `${filterLength.value} min`;
+});
+
+
+filterPrice.addEventListener("change", () => {
+  label_filterPrice.innerHTML = `${filterPrice.value}&euro;&plus;`;
+});
 
 addToCartBtn.forEach((btn) => {
   btn.addEventListener("click", () => {

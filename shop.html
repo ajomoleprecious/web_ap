@@ -80,7 +80,7 @@
         <section class="shop">
             <section class="shop__aside">
                 <i class="filterClose fa-solid fa-xmark"></i>
-                <form action="#" method="get">
+                <form action="shop.html" method="get">
                     <h2>Filter</h2>
                     <section class="shop__aside__cat">
                         <select name="category">
@@ -140,17 +140,17 @@
                     <section class="shop__aside__price">
                         <h3>Prijs</h3>
                         <section>
-                            <input type="range" name="price" min="0" max="20" value="10" class="slider"
+                            <input type="range" name="price" min="5" max="20" value="10" class="slider"
                                 id="filterPrice">
-                            <label for="filterPrice">50</label>
+                            <label id="label_filterPrice" for="filterPrice">10&euro;&plus;</label>
                         </section>
                     </section>
                     <section class="shop__aside__length">
                         <h3>Lengte</h3>
                         <section>
-                            <input type="range" name="length" min="0" max="250" value="100" class="slider"
+                            <input type="range" name="length" min="60" max="250" value="100" class="slider"
                                 id="filterLength">
-                            <label for="filterLength">100</label>
+                            <label id="label_filterLength" for="filterLength">100 min</label>
                         </section>
                     </section>
                     <section class="shop__aside__score">

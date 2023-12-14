@@ -1,0 +1,7 @@
+TODO
+
+- Add a local storage system for liked items (Maybe with an aside)
+
+- Buttons on product detail page should work according to the task
+
+- Add a local storage for reviews. Extend with on load !

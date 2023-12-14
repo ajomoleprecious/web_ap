@@ -42,27 +42,27 @@ function addReview() {
     let p = document.createElement("p");
     p.classList.add("user");
     p.innerHTML = review.name;
-    let starsecion = document.createElement("section");
+    let starSection = document.createElement("section");
     for (let i = 0; i < 5; i++) {
        if ( i < review.score) {
             let span = document.createElement("span");
             span.classList.add("fa");
             span.classList.add("fa-star");
             span.classList.add("checked");
-            starsecion.appendChild(span);
+            starSection.appendChild(span);
        }
          else{
             let span = document.createElement("span");
             span.classList.add("fa");
             span.classList.add("fa-star");
-            starsecion.appendChild(span);         
+            starSection.appendChild(span);         
         }
     }
     let q = document.createElement("q");
     q.classList.add("comment");
     q.innerHTML = review.text;
     section.appendChild(p);
-    section.appendChild(starsecion);
+    section.appendChild(starSection);
     section.appendChild(q);
     detail__reviews.appendChild(section);
 }

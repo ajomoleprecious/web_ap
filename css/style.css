@@ -741,6 +741,7 @@ body {
   align-items: start;
   flex-wrap: wrap;
   text-align: center;
+  margin: 0 1rem auto 1rem;
 }
 .detail__media .media__images img {
   width: 180px;

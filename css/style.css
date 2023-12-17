@@ -997,6 +997,14 @@ body {
   color: black;
 }
 
+/* --KLANTEN-- */
+.klantenlist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
 /* --MEDIA QUERIES-- */
 @media (max-width: 415px) {
   .product__card {

@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="nl-BE">
-
+<html lang="nl-be">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Precious Ajomole">
-    <meta name="description" content="Web winkel voor movies">
-    <title>WatchMovies | Contact</title>
+    <title>WatchMovies | Klanten</title>
     <link rel="shortcut icon" href="assets/icons/website_icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
-    <script src="js/contact.js" defer></script>
-    <script src="https://kit.fontawesome.com/cd8c9527e1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cd8c9527e1.js" crossorigin="anonymous" defer></script>
+    <script src="js/klanten.js" defer></script>
     <script src="js/index.js" defer></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-
 <body>
     <header class="header">
         <a id="logo" class="header__logo" href="index.html"><img class="logo__img" src="assets/imgs/logo.webp"
@@ -28,8 +19,8 @@
             <ul class="header__menu">
                 <li class="menu__item"><a href="index.html">Home</a></li>
                 <li class="menu__item"><a href="shop.html">Shop</a></li>
-                <li class="menu__item menu__item--active"><a href="contact.html">Contact</a></li>
-                <li class="menu__item"><a href="klanten.html">Klanten</a></li>
+                <li class="menu__item"><a href="contact.html">Contact</a></li>
+                <li class="menu__item menu__item--active"><a href="klanten.html">Klanten</a></li>
             </ul>
         </nav>
         <section class="header__menu2">
@@ -53,24 +44,6 @@
         </section>
     </header>
     <main>
-        <section class="contact">
-            <h1 class="contact__title">Contact</h1>
-            <form class="contact__form" action="contact.php" method="post">
-                <label class="contact__form__label" for="name">Naam<sup>&#42;</sup></label>
-                <input class="contact__form__inputNaam" type="text" name="name" id="name" placeholder="Naam" required
-                    autocomplete="name">
-                <label class="contact__form__label" for="email">Email<sup>&#42;</sup></label>
-                <input class="contact__form__inputEmail" type="email" name="email" id="email" placeholder="Email"
-                    required autocomplete="email">
-                <label class="contact__form__label" for="message">Bericht<sup>&#42;</sup></label>
-                <textarea class="contact__form__inputMessage" name="message" id="message" cols="30" rows="10"
-                    placeholder="Bericht" required></textarea>
-                <input class="contact__form__submit" type="submit" value="Stuur bericht">
-            </form>
-        </section>
-        <section class="contact__map">
-            <div id="map"></div>
-        </section>
         <a href="#" aria-label="link to scroll to the top" class="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
     </main>
     <footer class="footer">
@@ -79,7 +52,8 @@
             <ul class="footer__menu">
                 <li class="menu__item"><a href="index.html">Home</a></li>
                 <li class="menu__item"><a href="shop.html">Shop</a></li>
-                <li class="menu__item menu__item--active"><a href="contact.html">Contact</a></li>
+                <li class="menu__item"><a href="contact.html">Contact</a></li>
+                <li class="menu__item menu__item--active"><a href="klanten.html">Klanten</a></li>
             </ul>
         </nav>
         <section class="socials">
@@ -92,9 +66,7 @@
                     href="https://twitter.com/AP_Hogeschool"><i class="fa-brands fa-twitter"></i></a>
             </section>
             <p>&copy;2023&mdash;WatchMovies</p><br>
-
         </section>
     </footer>
 </body>
-
 </html>

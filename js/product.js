@@ -1,13 +1,13 @@
 const review_name = document.getElementById("review_name");
-const unknown = document.getElementById("unknown");
+const unknownBox = document.getElementById("unknown");
 const review_score = document.getElementById("review_score");
 const review_text = document.getElementById("review_text");
 const review_form = document.getElementById("review_form");
 const label_score = document.getElementById("label_score");
 let detail__reviews = document.querySelector(".detail__reviews");
 
-unknown.addEventListener("click", () => {
-    if (unknown.checked) {
+unknownBox.addEventListener("click", () => {
+    if (unknownBox.checked) {
         review_name.value = "Unknown";
         review_name.classList.toggle("disabled");
     }
@@ -17,7 +17,7 @@ unknown.addEventListener("click", () => {
     }
 });
 
-review_score.addEventListener("change", () => {
+review_score.addEventListener("mousemove", () => {
     label_score.innerHTML = `${review_score.value}`;
 });
 

@@ -18,4 +18,6 @@ fetch('https://randomuser.me/api/?results=5')
             `;
             klantenlist.innerHTML += klantItem;
     });
-})
+}).catch(() => {
+    console.log('Iets ging mis bij het laden van de klanten');
+});

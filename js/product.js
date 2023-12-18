@@ -20,6 +20,9 @@ unknownBox.addEventListener("click", () => {
 review_score.addEventListener("mousemove", () => {
     label_score.innerHTML = `${review_score.value}`;
 });
+review_score.addEventListener("change", () => {
+    label_score.innerHTML = `${review_score.value}`;
+});
 
 function addReview() {
     review_form.onsubmit = (e) => {

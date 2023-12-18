@@ -16,9 +16,15 @@ const label_filterLength = document.getElementById("label_filterLength");
 filterLength.addEventListener("mousemove", () => {
   label_filterLength.innerHTML = `${filterLength.value} min`;
 });
+filterLength.addEventListener("change", () => {
+  label_filterLength.innerHTML = `${filterLength.value} min`;
+});
 
 
 filterPrice.addEventListener("mousemove", () => {
+  label_filterPrice.innerHTML = `${filterPrice.value}&euro;&plus;`;
+});
+filterPrice.addEventListener("change", () => {
   label_filterPrice.innerHTML = `${filterPrice.value}&euro;&plus;`;
 });
 
